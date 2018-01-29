@@ -274,6 +274,65 @@ jQuery(function($){
     }
 });
 
+jQuery(function($){
+    defaultEvent();
+    clickEvent();
+    disableEvent();
+    function clickEvent(){
+        $('#modal-event-studio-list button.add').on('click',function(){
+            var id = $(this).attr('data-value');
+            //console.log(id);
+            var data = $(this).closest('.table-li');
+            var element = $('#event-studio-list');
+            var tr = element.find('.tr-add-row').clone(true);
+            element.find('tbody .tr-add-row').before(tr);
+            tr.fadeIn(500).removeClass('tr-add-row');
+            _texrareaAutoHeight();
+            _checkRowNumber(element,1);
+
+            tr.find('.shop-name').text(data.find('.table-title').attr('data-value'));
+            tr.find('.child-name').text(data.find('.table-description .shop-name').attr('data-value'));
+            tr.find('.pref-name').text(data.find('.table-pref').attr('data-value'));
+            tr.find('.data-id').val(id);
+            tr.find('.btn-remove-row').attr('data-id',id);
+            
+            //studiolist.add({ 'shop-name': element.find('.table-title').attr('data-name'), 'pref-name': element.find('.table-pref').attr('data-pref-name') });
+            $('#modal-event-studio-list .data-id-' + id).prop('disabled',true);
+            $('#modal-event-studio-list .data-id-' + id).text('申請済');
+            addSelect();
+            return false;
+        });
+    };
+    function disableEvent(){
+        $('#event-studio-list .list .data-id').each(function(){
+            var id = $(this).val();
+            $('#modal-event-studio-list .data-id-' + id).prop('disabled',true);
+            $('#modal-event-studio-list .data-id-' + id).text('申請済');
+        });
+    };
+    function addSelect(){
+        $('.select-studio').empty();
+        $('.select-studio').append($('<option>', { value: 'all', text: 'すべて' }));
+        $('.select-studio').append($('<option>', { value: 'not', text: '未選択' }));
+        $('#event-studio-list .list .data-id').each(function(){
+            if($(this).val() != '') {
+                var value = $(this).val();
+                var element = $(this).closest('.td-question');
+                var name = element.find('.shop-name').text() + ' ' + element.find('.child-name').text();;
+                var option = $('<option>', { value: value, text: name });
+                $('.select-studio').append(option);
+            }
+        });
+    }
+    function defaultEvent(){
+        var parent = $('#event-studio-list');
+        var element = $('#event-studio-list .list tr');
+        if(element.length > 1) {
+            parent.find('.btn-add-row').hide();
+        }
+    }
+});
+
 $(function(){
 var option = ['list-title','list-subtitle','pref-name','studio-hidden','case-hidden','id-hidden'];
 var page = 10;

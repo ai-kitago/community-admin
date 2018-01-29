@@ -15425,12 +15425,19 @@ ul.notifications {
   margin-left: 10px;
 }
 
+/* line 74, ../sass/parts/_table.scss */
+#event-studio-list .status {
+  width: auto;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
 @media screen and (max-width: 768px) {
-  /* line 76, ../sass/parts/_table.scss */
+  /* line 84, ../sass/parts/_table.scss */
   .table-add-row .table {
     margin-bottom: 0;
   }
-  /* line 79, ../sass/parts/_table.scss */
+  /* line 87, ../sass/parts/_table.scss */
   .table-add-row .btn-add-row {
     width: 100%;
     padding: 10px 0;
@@ -15439,7 +15446,7 @@ ul.notifications {
     float: none;
   }
 
-  /* line 88, ../sass/parts/_table.scss */
+  /* line 96, ../sass/parts/_table.scss */
   .clock-add select.form-control {
     margin-bottom: 10px;
   }

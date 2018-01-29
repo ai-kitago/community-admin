@@ -190,7 +190,7 @@
                                               tr = $(this).closest('tr');
                                               tr.fadeOut(500,function(){
                                                 tr.remove();
-                                                _checkRowNumber(element,7);
+                                                _checkRowNumber(element,5);
                                               });
                                               return false;
                                             });
@@ -225,25 +225,83 @@
                             
                             <div class="col-xs-12">
                               <h4>開催スタジオ</h4>
-                              <div id="studio-list" class="list-js">
-                                <ul class="list list-group">
-                                  <li>
-                                    <span class="shop-name">オハナスマイル ヨガスタジオ 祐天寺</span><span class="pref-name">東京都</span>
-                                    <select class="form-control case">
-                                    <?php foreach($dataClass->getValues(3) as $key => $value) : ?>
-                                      <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
-                                    <?php endforeach; ?>
-                                    </select>
-                                    <input type="hidden" class="data-id" value="01">
-                                  </li>
-                                </ul>
-                              </div>
-      
-                              <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
-                                  <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bd-studio-modal-lg">スタジオ追加</button>
+                              <div id="event-studio-list">
+                                <div class="row">
+                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 table-add-row event-studio-add">
+                                    <table class="table table-striped table-bordered">
+                                      <tbody class="list">
+                                        <tr>
+                                          <td class="td-question">
+                                            <div class="row">
+                                              <div class="col-lg-9">
+                                                <span class="shop-name">オハナスマイル ヨガスタジオ</span>
+                                                <span class="child-name">祐天寺</span>
+                                                <span class="pref-name">東京都</span>
+                                              </div>
+                                              <div class="col-lg-3">
+                                                <select class="form-control status">
+                                                  <option>申請準備</option>
+                                                  <option>解除</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <input type="hidden" class="data-id" value="01">
+                                          </td>
+                                          <td class="td-button">
+                                            <button class="btn btn-default btn-circle btn-remove-row" data-id="01">－</button>
+                                          </td>
+                                        </tr>
+                                        <tr class="tr-add-row">
+                                          <td class="td-question">
+                                            <div class="row">
+                                              <div class="col-lg-9">
+                                                <span class="shop-name"></span>
+                                                <span class="child-name"></span>
+                                                <span class="pref-name"></span>
+                                              </div>
+                                              <div class="col-lg-3">
+                                                <select class="form-control status">
+                                                  <option>申請準備</option>
+                                                  <option>解除</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <input type="hidden" class="data-id" value="">
+                                          </td>
+                                          <td class="td-button">
+                                            <button class="btn btn-default btn-circle btn-remove-row" data-id="">－</button>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <script>
+                                      <!--
+                                        $(function(){
+                                          var tr;
+                                          var element = $('#event-studio-list');
+                                          element.find('.btn-remove-row').on('click',function(){
+                                            var id = $(this).attr('data-id');
+                                            tr = $(this).closest('tr');
+                                            tr.fadeOut(500,function(){
+                                              tr.remove();
+                                              _checkRowNumber(element,1);
+                                            });
+                                            $('#modal-event-studio-list .data-id-' + id).prop('disabled',false);
+                                            $('#modal-event-studio-list .data-id-' + id).text('追加');
+                                            return false;
+                                          });
+                                        });
+                                      -->
+                                    </script>
+                                  </div>
                                 </div>
-                                <?php include( WORKSPACE . '/include/modal-studio.php'); ?>
+                                <div class="row">
+                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+                                    <button type="button" class="btn btn-default btn-add-row" data-toggle="modal" data-target=".bd-event-studio-modal-lg">スタジオ追加</button>
+                                  </div>
+                                  <?php include( WORKSPACE . '/include/modal-event-studio.php'); ?>
+                                </div>
+                                
                               </div>
       
                             </div>
@@ -283,7 +341,7 @@
                                   <div class="form-group">
                                     <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">住所</label>
                                     <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
-                                      <input type="text" class="form-control" name="address" placeholder="目黒区祐天寺2-9-4" onKeyUp="latlonSearch(this);">
+                                      <input type="text" class="form-control" name="address" placeholder="祐天寺2-9-4" onKeyUp="latlonSearch(this);">
                                     </div>
                                   </div>
                                   <div class="form-group">
