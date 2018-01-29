@@ -1,0 +1,93 @@
+.table-add-row {
+    margin-bottom: 10px;
+    .table {
+        margin-bottom: 10px;
+    }
+    tbody {
+        tr {
+            td {
+                &.td-check {
+                    text-align: center;
+                    vertical-align: middle;
+                    .md-checkbox {
+                        input[type="checkbox"] {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+                &.td-question {
+                    vertical-align: middle;
+                    select {
+                        margin-bottom: 10px;
+                    }
+                }
+                &:last-child {
+                    width: 30px;
+                    vertical-align: middle;
+                    position: relative;
+                }
+            }
+            &:first-child {
+                .btn-plug-row {
+                    display: none !important;
+                }
+            }
+        }
+        tr.tr-add-row {
+            display: none;
+        }
+    }
+    .btn-add-row {
+        float: right;
+    }
+}
+
+.news-add {
+    .td-button {
+        cursor: ns-resize;
+    }
+}
+
+#license-list {
+    .table {
+        margin-top: 10px;
+    }
+    .list {
+        .license-parent-name,
+        .license-child-name {
+            font-weight: bold;
+        }
+        .license-child-name {
+            margin-left: 10px;
+        }
+        .license-name,
+        .license-teacher-name {
+            
+        }
+        .license-teacher-name {
+            margin-left: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:$screen-sm){
+
+.table-add-row {
+    .table {
+        margin-bottom: 0;
+    }
+    .btn-add-row {
+        width: 100%;
+        padding: 10px 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        float: none;
+    }
+}
+.clock-add {
+    select.form-control {
+        margin-bottom: 10px;
+    }
+}
+
+}
