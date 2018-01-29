@@ -70,6 +70,14 @@
     }
 }
 
+#event-studio-list {
+    .status {
+        width: auto;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+}
+
 @media screen and (max-width:$screen-sm){
 
 .table-add-row {
