@@ -14640,140 +14640,6 @@ ul.notifications {
 }
 
 /** /FullCalendar **/
-/* line 4540, ../sass/custom.scss */
-.profile_img {
-  margin-bottom: 20px;
-  position: relative;
-}
-/* line 4543, ../sass/custom.scss */
-.profile_img:before {
-  display: block;
-  content: '';
-  padding-top: 100%;
-}
-/* line 4548, ../sass/custom.scss */
-.profile_img #crop-avatar {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-/* line 4559, ../sass/custom.scss */
-.pose_img {
-  margin-bottom: 20px;
-  position: relative;
-}
-/* line 4562, ../sass/custom.scss */
-.pose_img #crop-pose {
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-
-/** Dropzone.js **/
-/* line 4572, ../sass/custom.scss */
-.dropzone {
-  width: 100%;
-  padding: 0;
-  background: transparent;
-  border: 1px solid #e5e5e5;
-  position: relative;
-  display: table;
-}
-/* line 4580, ../sass/custom.scss */
-.dropzone.dz-drag-hover {
-  background: lighter(#ec8c69, 20%);
-}
-/* line 4586, ../sass/custom.scss */
-.dropzone .dz-preview .dz-image {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-/* line 4588, ../sass/custom.scss */
-.dropzone .dz-preview .dz-image img {
-  width: 100%;
-  height: auto;
-}
-/* line 4593, ../sass/custom.scss */
-.dropzone .dz-preview .dz-remove {
-  width: 30px;
-  height: 30px;
-  padding: 6px;
-  color: #fff;
-  background: #777777;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  z-index: 30;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: 18px;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* line 4610, ../sass/custom.scss */
-.dropzone .dz-preview .dz-remove:before {
-  content: "\f1f8";
-}
-/* line 4613, ../sass/custom.scss */
-.dropzone .dz-preview .dz-remove:hover {
-  text-decoration: none;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-}
-/* line 4619, ../sass/custom.scss */
-.dropzone .dz-message {
-  padding: 0 20px;
-  vertical-align: middle;
-  display: table-cell;
-}
-
-/* line 4626, ../sass/custom.scss */
-.avatarzone {
-  min-height: 100%;
-}
-/* line 4628, ../sass/custom.scss */
-.avatarzone .dz-preview {
-  margin: 0;
-  display: block;
-}
-/* line 4631, ../sass/custom.scss */
-.avatarzone .dz-preview .dz-image {
-  width: 100%;
-  height: 100%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-/* line 4635, ../sass/custom.scss */
-.avatarzone .dz-preview .dz-image img {
-  width: 100%;
-  height: auto;
-}
-/* line 4640, ../sass/custom.scss */
-.avatarzone .dz-preview .dz-error-message {
-  width: 100%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  top: auto;
-  left: auto;
-  bottom: 0;
-}
-/* line 4646, ../sass/custom.scss */
-.avatarzone .dz-preview .dz-error-message:after {
-  content: none;
-}
-
-/** /Dropzone.js **/
 /* line 2, ../sass/custom/_studio.scss */
 .studio-edit .cc-content {
   margin-bottom: 10px;
@@ -14818,6 +14684,167 @@ ul.notifications {
     left: auto;
   }
 }
+/* line 1, ../sass/parts/_dropzone.scss */
+.profile_img {
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 4, ../sass/parts/_dropzone.scss */
+.profile_img:before {
+  display: block;
+  content: '';
+  padding-top: 100%;
+}
+/* line 9, ../sass/parts/_dropzone.scss */
+.profile_img #crop-avatar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* line 20, ../sass/parts/_dropzone.scss */
+.item_img {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  /*
+  &:before {
+    display: block;
+    content: '';
+    padding-top: 100%;
+  }
+  */
+}
+/* line 32, ../sass/parts/_dropzone.scss */
+.item_img .crop-avatar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* line 40, ../sass/parts/_dropzone.scss */
+.item_img .crop-avatar .dropzone .dz-message {
+  padding: 0;
+}
+
+/* line 47, ../sass/parts/_dropzone.scss */
+.pose_img {
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 50, ../sass/parts/_dropzone.scss */
+.pose_img #crop-pose {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+/** Dropzone.js **/
+/* line 60, ../sass/parts/_dropzone.scss */
+.dropzone {
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  border: 1px solid #e5e5e5;
+  position: relative;
+  display: table;
+}
+/* line 68, ../sass/parts/_dropzone.scss */
+.dropzone.dz-drag-hover {
+  background: lighter(#ec8c69, 20%);
+}
+/* line 74, ../sass/parts/_dropzone.scss */
+.dropzone .dz-preview .dz-image {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+/* line 76, ../sass/parts/_dropzone.scss */
+.dropzone .dz-preview .dz-image img {
+  width: 100%;
+  height: auto;
+}
+/* line 81, ../sass/parts/_dropzone.scss */
+.dropzone .dz-preview .dz-remove {
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  color: #fff;
+  background: #777777;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 30;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 18px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 98, ../sass/parts/_dropzone.scss */
+.dropzone .dz-preview .dz-remove:before {
+  content: "\f1f8";
+}
+/* line 101, ../sass/parts/_dropzone.scss */
+.dropzone .dz-preview .dz-remove:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+/* line 107, ../sass/parts/_dropzone.scss */
+.dropzone .dz-message {
+  padding: 0 20px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+/* line 114, ../sass/parts/_dropzone.scss */
+.avatarzone {
+  min-height: 100%;
+}
+/* line 116, ../sass/parts/_dropzone.scss */
+.avatarzone .dz-preview {
+  margin: 0;
+  display: block;
+}
+/* line 119, ../sass/parts/_dropzone.scss */
+.avatarzone .dz-preview .dz-image {
+  width: 100%;
+  height: 100%;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+/* line 123, ../sass/parts/_dropzone.scss */
+.avatarzone .dz-preview .dz-image img {
+  width: 100%;
+  height: auto;
+}
+/* line 128, ../sass/parts/_dropzone.scss */
+.avatarzone .dz-preview .dz-error-message {
+  width: 100%;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  top: auto;
+  left: auto;
+  bottom: 0;
+}
+/* line 134, ../sass/parts/_dropzone.scss */
+.avatarzone .dz-preview .dz-error-message:after {
+  content: none;
+}
+
+/** /Dropzone.js **/
 /* line 1, ../sass/parts/_list.scss */
 .list-li {
   padding-top: 20px;
@@ -15415,24 +15442,29 @@ ul.notifications {
 }
 
 /* line 52, ../sass/parts/_table.scss */
+.item-add .td-item-image {
+  width: 170px;
+}
+
+/* line 58, ../sass/parts/_table.scss */
 #license-list .table {
   margin-top: 10px;
 }
-/* line 56, ../sass/parts/_table.scss */
+/* line 62, ../sass/parts/_table.scss */
 #license-list .list .license-parent-name,
 #license-list .list .license-child-name {
   font-weight: bold;
 }
-/* line 60, ../sass/parts/_table.scss */
+/* line 66, ../sass/parts/_table.scss */
 #license-list .list .license-child-name {
   margin-left: 10px;
 }
-/* line 67, ../sass/parts/_table.scss */
+/* line 73, ../sass/parts/_table.scss */
 #license-list .list .license-teacher-name {
   margin-left: 10px;
 }
 
-/* line 74, ../sass/parts/_table.scss */
+/* line 80, ../sass/parts/_table.scss */
 #event-studio-list .status {
   width: auto;
   margin-bottom: 0;
@@ -15440,11 +15472,11 @@ ul.notifications {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 84, ../sass/parts/_table.scss */
+  /* line 90, ../sass/parts/_table.scss */
   .table-add-row .table {
     margin-bottom: 0;
   }
-  /* line 87, ../sass/parts/_table.scss */
+  /* line 93, ../sass/parts/_table.scss */
   .table-add-row .btn-add-row {
     width: 100%;
     padding: 10px 0;
@@ -15453,7 +15485,7 @@ ul.notifications {
     float: none;
   }
 
-  /* line 96, ../sass/parts/_table.scss */
+  /* line 102, ../sass/parts/_table.scss */
   .clock-add select.form-control {
     margin-bottom: 10px;
   }

@@ -80,6 +80,21 @@
                   </li>
                   <li>
                     <a>
+                      <i class="fa fa-shopping-cart"></i>
+                      <div class="menu_title">ショップ<small>Shop</small></div>
+                      <span class="fa fa-chevron-down"></span>
+                    </a>
+                    <ul class="nav child_menu">
+                      <li>
+                        <a href="/page/shop/">ショップ一覧</a>
+                      </li>
+                      <li>
+                        <a href="/page/shop/edit.php">ショップ登録</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a>
                       <i class="fa fa-users"></i>
                       <div class="menu_title">求人<small>Job</small></div>
                       <span class="fa fa-chevron-down"></span>
