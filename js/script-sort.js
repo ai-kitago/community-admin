@@ -333,6 +333,51 @@ jQuery(function($){
     }
 });
 
+jQuery(function($){
+    defaultEvent();
+    clickEvent();
+    disableEvent();
+    function clickEvent(){
+        $('#modal-job-event-list button.add').on('click',function(){
+            var id = $(this).attr('data-value');
+            //console.log(id);
+            var data = $(this).closest('.table-li');
+            var element = $('#job-event-list');
+            var tr = element.find('.tr-add-row').clone(true);
+            element.find('tbody .tr-add-row').before(tr);
+            tr.fadeIn(500).removeClass('tr-add-row');
+            _texrareaAutoHeight();
+            _checkRowNumber(element,1);
+
+            tr.find('.shop-name').text(data.find('.table-title').attr('data-value'));
+            tr.find('.child-name').text(data.find('.table-description .shop-name').attr('data-value'));
+            tr.find('.pref-name').text(data.find('.table-pref').attr('data-value'));
+            tr.find('.data-id').val(id);
+            tr.find('.btn-remove-row').attr('data-id',id);
+            
+            //studiolist.add({ 'shop-name': element.find('.table-title').attr('data-name'), 'pref-name': element.find('.table-pref').attr('data-pref-name') });
+            $('#modal-job-event-list .data-id-' + id).prop('disabled',true);
+            $('#modal-job-event-list .data-id-' + id).text('申請済');
+            return false;
+        });
+    };
+    function disableEvent(){
+        $('#job-event-list .list .data-id').each(function(){
+            var id = $(this).val();
+            $('#modal-job-event-list .data-id-' + id).prop('disabled',true);
+            $('#modal-job-event-list .data-id-' + id).text('申請済');
+        });
+    };
+    function defaultEvent(){
+        var parent = $('#job-event-list');
+        var element = $('#job-event-list .list tr');
+        if(element.length > 1) {
+            console.log('OK');
+            parent.find('.btn-add-row').hide();
+        }
+    }
+});
+
 $(function(){
 var option = ['list-title','list-subtitle','pref-name','studio-hidden','case-hidden','id-hidden'];
 var page = 10;

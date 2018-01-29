@@ -23,19 +23,7 @@
                         <div class="x_title">
                           <h2>基本情報 <small>Basic Edit</small></h2>
                           <ul class="nav navbar-right panel_toolbox">
-                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                            </li>
-                            <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                              <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Settings 1</a>
-                                </li>
-                                <li><a href="#">Settings 2</a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
-                            </li>
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                           </ul>
                           <div class="clearfix"></div>
                         </div>
@@ -535,10 +523,7 @@
                         <div class="x_title">
                           <h2>お知らせ<small>News</small></h2>
                           <ul class="nav navbar-right panel_toolbox">
-                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                            </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
-                            </li>
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                           </ul>
                           <div class="clearfix"></div>
                         </div>
@@ -616,10 +601,7 @@
                         <div class="x_title">
                           <h2>所属インストラクター<small>instructor</small></h2>
                           <ul class="nav navbar-right panel_toolbox">
-                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                            </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
-                            </li>
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                           </ul>
                           <div class="clearfix"></div>
                         </div>
@@ -669,7 +651,8 @@
                         </div><!-- /x-content -->
                       </div>
                     </div>
-
+                    
+                    <?php /*
                     <div class="col-xs-12">
                       <div class="x_panel">
                         <div class="x_title">
@@ -761,6 +744,7 @@
                         </div><!-- /x-content -->
                       </div>
                     </div>
+                    */ ?>
 
                     <div class="col-xs-12">
                       <div class="x_panel">
@@ -814,10 +798,7 @@
                         <div class="x_title">
                           <h2>カレンダー編集<small>Calendar</small></h2>
                           <ul class="nav navbar-right panel_toolbox">
-                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                            </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
-                            </li>
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                           </ul>
                           <div class="clearfix"></div>
                         </div>

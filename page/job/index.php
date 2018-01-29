@@ -7,7 +7,7 @@
 
             <div class="page-title">
               <div class="title_left">
-                <h1>スタジオ <small>Studio</small></h1>
+                <h1>求人一覧 <small>Job</small></h1>
               </div>
 
               <div class="title_right">
@@ -29,7 +29,7 @@
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>登録スタジオ一覧 <small>Studio List</small></h2>
+                    <h2>登録求人一覧 <small>Job List</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                     </ul>
@@ -42,10 +42,10 @@
                         <ul class="list-unstyled list-ul">
                           <li class="list-li list-table">
                             <div class="list-image list-cell">
-                              <img src="/images/studio-thumb.jpg" width="120" height="120">
+                              <img src="/images/thumbnail-500x500.jpg" width="120" height="120">
                             </div>
                             <div class="list-title list-cell">
-                              <h3>オハナスマイル ヨガスタジオ 祐天寺</h3>
+                              <h3>タイトルタイトル</h3>
                             </div>
                             <div class="list-address list-cell">
                               <p>〒153-0052 東京都目黒区祐天寺2-9-4 虎ノ門ビル2F</p>
@@ -62,10 +62,10 @@
                           </li>
                           <li class="list-li list-table">
                             <div class="list-image list-cell">
-                              <img src="/images/studio-thumb.jpg" width="120" height="120">
+                              <img src="/images/thumbnail-500x500.jpg" width="120" height="120">
                             </div>
                             <div class="list-title list-cell">
-                              <h3>オハナスマイル ヨガスタジオ 駒沢大学</h3>
+                              <h3>タイトルタイトル</h3>
                             </div>
                             <div class="list-address list-cell">
                               <p>〒154-0003 東京都世田谷区野沢四丁目21番13号 KOMAZAWA STUDIO 2F</p>

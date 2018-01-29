@@ -7,7 +7,7 @@
 
             <div class="page-title">
               <div class="title_left">
-                <h1>イベント <small>Event</small></h1>
+                <h1>求人登録 <small>Job</small></h1>
               </div>
             </div>
 
@@ -23,184 +23,133 @@
                         <div class="x_title">
                           <h2>基本情報 <small>Basic Edit</small></h2>
                           <ul class="nav navbar-right panel_toolbox">
-                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                            </li>
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                           </ul>
                           <div class="clearfix"></div>
                         </div>
       
                         <div class="x_content">
                           <div class="row">
-                            
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                              <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 profile_left">
-                                  <div class="profile_img">
-                                    <div id="crop-avatar">
-                                      <div id="eventMain" class="dropzone dz-clickable avatarzone"></div>
-                                    </div>
-                                  </div>
-                                </div>
-                            
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 profile_left">
-                                  <div class="profile_img">
-                                    <div id="crop-avatar">
-                                      <div id="eventSub" class="dropzone dz-clickable avatarzone"></div>
-                                    </div>
-                                  </div>
-                                </div>
-                            
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 profile_left">
-                                  <div class="profile_img">
-                                    <div id="crop-avatar">
-                                      <div id="eventLogo" class="dropzone dz-clickable avatarzone"></div>
-                                    </div>
-                                  </div>
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 profile_left">
+                              <div class="profile_img">
+                                <div id="crop-avatar">
+                                  <div id="myAvatar" class="dropzone dz-clickable avatarzone"></div>
                                 </div>
                               </div>
-                              
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                               <div class="form-horizontal form-label-left input_mask">
                                 <div class="row">
-                                  
-                                  <div class="form-group">
-                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">開催名</label>
-                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
-                                      <input type="text" class="form-control" placeholder="イベント・ワークショップ名">
-                                    </div>
-                                  </div>
-                                  <div class="form-group">
-                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">詳細URL</label>
-                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
-                                      <input type="text" class="form-control" placeholder="詳細サイト・ページ">
-                                    </div>
-                                  </div>
-                                  <div class="form-group">
-                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">お問い合わせ先</label>
-                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
-                                      <input type="text" class="form-control" placeholder="メールアドレス">
-                                    </div>
+                                  <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                    <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="タイトル">
+                                    <span class="fa fa-home form-control-feedback left" aria-hidden="true"></span>
                                   </div>
                                   
-                                  <div class="form-group">
-                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">定員</label>
-                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
-                                      <input type="text" class="form-control" placeholder="200">
-                                    </div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                                      <span>名</span>
-                                    </div>
+                                  <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                    <input type="text" class="form-control has-feedback-left" id="inputSuccess3" placeholder="WebSite">
+                                    <span class="fa fa-globe form-control-feedback left" aria-hidden="true"></span>
+                                  </div>
+            
+                                  <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                    <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="お問い合わせ先">
+                                    <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
                                   </div>
       
                                 </div>
                               </div>
                             </div>
-                            
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                              <div class="form-horizontal form-label-left input_mask">
-                                <div class="row">
-                                  <div class="form-group">
-                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">概要</label>
-                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
-                                      <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="イベントの概要をご記入ください。" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="プロフィールが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
-                                    </div>
-                                  </div>
-                                  <div class="form-group">
-                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">内容</label>
-                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
-                                      <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="イベントの内容をご記入ください。" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="プロフィールが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
-                                    </div>
-                                  </div>
+      
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                              <h4>職場のイメージ</h4>
+                              <div class="pose_img">
+                                <div id="crop-pose">
+                                  <div id="myPose" class="dropzone dz-clickable"></div>
                                 </div>
                               </div>
                             </div>
-
+      
                             <div class="col-md-12 col-sm-12 col-xs-12">
+                              <h4>応募内容</h4>
                               <div class="form-horizontal form-label-left">
                                 <div class="row">
-
                                   <div class="form-group">
-                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">開催日程</label>
-                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12 table-add-row clock-add">
-                                      <table class="table table-striped table-bordered">
-                                        <tbody>
-                                          <tr>
-                                            <td class="td-clock-week">
-                                              <div class="row">
-                                                <div class="col-lg-4 col-md-3 col-sm-3 col-xs-12">
-                                                  <input type="text" class="form-control datepicker" value="" placeholder="2018-04-01">
-                                                </div>
-                                                <div class="col-lg-4 col-md-3 col-sm-3 col-xs-6">
-                                                  <input type="text" class="form-control timepicker" placeholder="OPEN">
-                                                </div>
-                                                <div class="col-lg-4 col-md-3 col-sm-3 col-xs-6">
-                                                  <input type="text" class="form-control timepicker" placeholder="CLOSE">
-                                                </div>
-                                              </div>
-                                            </td>
-                                            <td class="td-button">
-                                              <button class="btn btn-default btn-circle btn-remove-row">－</button>
-                                            </td>
-                                          </tr>
-                                          <tr class="tr-add-row">
-                                            <td class="td-clock-week">
-                                              <div class="row">
-                                                <div class="col-lg-4 col-md-3 col-sm-3 col-xs-12">
-                                                  <input type="text" class="form-control date" value="" placeholder="2018-04-01">
-                                                </div>
-                                                <div class="col-lg-4 col-md-3 col-sm-3 col-xs-6">
-                                                  <input type="text" class="form-control time" placeholder="OPEN">
-                                                </div>
-                                                <div class="col-lg-4 col-md-3 col-sm-3 col-xs-6">
-                                                  <input type="text" class="form-control time" placeholder="CLOSE">
-                                                </div>
-                                              </div>
-                                            </td>
-                                            <td class="td-button">
-                                              <button class="btn btn-default btn-circle btn-remove-row">－</button>
-                                            </td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                      <script>
-                                        <!--
-                                          $(function(){
-                                            var tr;
-                                            var element = $('.clock-add');
-                                            element.find('.btn-add-row').on('click',function(){
-                                              tr = element.find('.tr-add-row').clone(true);
-                                              $(this).closest('.table-add-row').find('tbody .tr-add-row').before(tr);
-                                              tr.fadeIn(500).removeClass('tr-add-row');
-                                              _texrareaAutoHeight();
-                                              _checkRowNumber(element,5);
-                                              tr.find('input.time').addClass('timepicker');
-                                              $('.timepicker').clockpicker({donetext:'OK',autoclose:true});
-                                              tr.find('input.date').addClass('datepicker');
-                                              tr.find('input.datepicker').datetimepicker({format: 'YYYY-MM-DD'});
-                                              return false;
-                                            });
-                                            element.find('.btn-plug-row').on('click',function(){
-                                              tr = element.find('.tr-add-row').clone(true);
-                                              $(this).closest('tr').before(tr);
-                                              tr.fadeIn(500).removeClass('tr-add-row');
-                                              _texrareaAutoHeight();
-                                              _checkRowNumber(element,5);
-                                              return false;
-                                            });
-                                            element.find('.btn-remove-row').on('click',function(){
-                                              tr = $(this).closest('tr');
-                                              tr.fadeOut(500,function(){
-                                                tr.remove();
-                                                _checkRowNumber(element,5);
-                                              });
-                                              return false;
-                                            });
-                                          });
-                                        -->
-                                      </script>
-                                      <button class="btn btn-default btn-add-row">開催日を追加</button>
+                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">募集職種</label>
+                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                      <select class="form-control">
+                                        <option>スタジオスタッフ</option>
+                                        <option>スタジオマネージャー</option>
+                                        <option>インストラクター</option>
+                                        <option>企画</option>
+                                        <option>営業</option>
+                                        <option>販売／接客</option>
+                                        <option>ライター</option>
+                                        <option>カメラマン</option>
+                                        <option>コンテンツクリエイター</option>
+                                        <option>読者モデル</option>
+                                        <option>ブロガー</option>
+                                      </select>
                                     </div>
                                   </div>
-
+                                  <div class="form-group">
+                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">雇用形態</label>
+                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                      <select class="form-control">
+                                        <option>正社員</option>
+                                        <option>契約社員</option>
+                                        <option>アルバイト／パート</option>
+                                        <option>業務委託</option>
+                                        <option>ボランティア</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">給与</label>
+                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                      <input type="text" class="form-control" placeholder="月給30万～50万円">
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="form-group">
+                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">仕事内容</label>
+                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                      <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="・ヨガジェネレーションが運営するサービスの企画営業
+・ヨガスタジオのオーナーさんやヨガインストラクターさんとコミュニケーションをとる
+・サービスの紹介や使用しての感想を聞きWEBチームにフィードバック、改善" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="テキストが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">必須スキル</label>
+                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                      <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="・人とコミュニケーションをとるのが好きな方
+・ヨガジェネレーションが好きな方
+・周りをワクワクさせるのが好きな方" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="テキストが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">歓迎スキル</label>
+                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                      <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="・営業経験（特に新規開拓営業の経験）
+・基本的なPCスキル" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="テキストが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">休日／休暇</label>
+                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                      <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="週休2日制" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="テキストが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">勤務時間</label>
+                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                      <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="1日8時間程度" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="テキストが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">待遇</label>
+                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                      <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="各種社会保険完備、交通費支給" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="テキストが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -210,6 +159,7 @@
                     </div>
 
                     
+
                   </div>
                 </div>
               </div><!-- col-left -->
@@ -221,7 +171,7 @@
                     <div class="col-xs-12">
                       <div class="x_panel">
                         <div class="x_title">
-                          <h2>開催地 <small>Venue</small></h2>
+                          <h2>勤務地 <small>Address</small></h2>
                           <ul class="nav navbar-right panel_toolbox">
                             <li>
                               <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
@@ -230,19 +180,21 @@
                           <div class="clearfix"></div>
                         </div>
                         <div class="x_content">
+
                           <div class="row">
                             
                             <div>
                               <ul class="tab-ul">
                                 <li class="select">登録スタジオ</li>
-                                <li>新規開催地</li>
+                                <li>登録イベント</li>
+                                <li>新規勤務地</li>
                               </ul>
                             </div>
                             
                             <div class="tab-content">
-
+                              
                             <div class="tab-li col-xs-12">
-                              <h4>開催スタジオ</h4>
+                              <h4>スタジオ</h4>
                               <div id="event-studio-list">
                                 <div class="row">
                                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 table-add-row event-studio-add">
@@ -255,12 +207,6 @@
                                                 <span class="shop-name">オハナスマイル ヨガスタジオ</span>
                                                 <span class="child-name">祐天寺</span>
                                                 <span class="pref-name">東京都</span>
-                                              </div>
-                                              <div class="col-lg-3">
-                                                <select class="form-control status">
-                                                  <option>申請準備</option>
-                                                  <option>解除</option>
-                                                </select>
                                               </div>
                                             </div>
                                             <input type="hidden" class="data-id" value="01">
@@ -276,12 +222,6 @@
                                                 <span class="shop-name"></span>
                                                 <span class="child-name"></span>
                                                 <span class="pref-name"></span>
-                                              </div>
-                                              <div class="col-lg-3">
-                                                <select class="form-control status">
-                                                  <option>申請準備</option>
-                                                  <option>解除</option>
-                                                </select>
                                               </div>
                                             </div>
                                             <input type="hidden" class="data-id" value="">
@@ -319,11 +259,78 @@
                                   </div>
                                   <?php include( WORKSPACE . '/include/modal-event-studio.php'); ?>
                                 </div>
-                                
                               </div>
-      
                             </div>
-
+                            
+                            <div class="tab-li col-xs-12" style="display: none;">
+                              <h4>イベント</h4>
+                              <div id="job-event-list">
+                                <div class="row">
+                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 table-add-row job-event-add">
+                                    <table class="table table-striped table-bordered">
+                                      <tbody class="list">
+                                        <tr>
+                                          <td class="td-question">
+                                            <div class="row">
+                                              <div class="col-lg-9">
+                                                <span class="shop-name">dusk</span>
+                                                <span class="child-name"></span>
+                                                <span class="pref-name">東京都</span>
+                                              </div>
+                                            </div>
+                                            <input type="hidden" class="data-id" value="01">
+                                          </td>
+                                          <td class="td-button">
+                                            <button class="btn btn-default btn-circle btn-remove-row" data-id="01">－</button>
+                                          </td>
+                                        </tr>
+                                        <tr class="tr-add-row">
+                                          <td class="td-question">
+                                            <div class="row">
+                                              <div class="col-lg-9">
+                                                <span class="shop-name"></span>
+                                                <span class="child-name"></span>
+                                                <span class="pref-name"></span>
+                                              </div>
+                                            </div>
+                                            <input type="hidden" class="data-id" value="">
+                                          </td>
+                                          <td class="td-button">
+                                            <button class="btn btn-default btn-circle btn-remove-row" data-id="">－</button>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <script>
+                                      <!--
+                                        $(function(){
+                                          var tr;
+                                          var element = $('#job-event-list');
+                                          element.find('.btn-remove-row').on('click',function(){
+                                            var id = $(this).attr('data-id');
+                                            tr = $(this).closest('tr');
+                                            tr.fadeOut(500,function(){
+                                              tr.remove();
+                                              _checkRowNumber(element,1);
+                                            });
+                                            $('#modal-job-event-list .data-id-' + id).prop('disabled',false);
+                                            $('#modal-job-event-list .data-id-' + id).text('追加');
+                                            return false;
+                                          });
+                                        });
+                                      -->
+                                    </script>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+                                    <button type="button" class="btn btn-default btn-add-row" data-toggle="modal" data-target=".bd-job-event-modal-lg">イベント追加</button>
+                                  </div>
+                                  <?php include( WORKSPACE . '/include/modal-job-event.php'); ?>
+                                </div>
+                              </div>
+                            </div>
+                            
                             <div class="tab-li col-md-12 col-sm-12 col-xs-12" style="display: none;">
                               <h4>地図情報</h4>
                               <div class="form-horizontal form-label-left">
@@ -359,7 +366,7 @@
                                   <div class="form-group">
                                     <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">住所</label>
                                     <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
-                                      <input type="text" class="form-control" name="address" placeholder="祐天寺2-9-4" onKeyUp="latlonSearch(this);">
+                                      <input type="text" class="form-control" name="address" placeholder="目黒区祐天寺2-9-4" onKeyUp="latlonSearch(this);">
                                     </div>
                                   </div>
                                   <div class="form-group">
@@ -505,81 +512,16 @@
                               </div>
                             </div>
                             
-                            </div><!-- tab-content -->
+                            </div>
                             
                           </div>
                         </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
               </div><!-- col-right -->
-
-              <div class="col-center">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <div class="x_panel">
-                        <div class="x_title">
-                          <h2>参加・出演インストラクター<small>instructor</small></h2>
-                          <ul class="nav navbar-right panel_toolbox">
-                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                            </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
-                            </li>
-                          </ul>
-                          <div class="clearfix"></div>
-                        </div>
-                        <div class="x_content">
-                          <div id="instructor-list">
-                            <div class="row row-eq-height">
-                              <?php
-                                foreach ($dataClass->getinstructor() as $dataKey => $dataValue) :
-                                  if($dataValue['status'] == 'success') :
-                                    $area = NULL;
-                                    for ($i=0;$i<count($dataValue['area']);$i++) :
-                                      $area .= $cdClass->prefArray($dataValue['area'][$i]);
-                                      if($i != count($dataValue['area']) - 1) $area .= '、';
-                                    endfor;
-                              ?>
-                              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
-                                <div class="area">
-                                  <div class="area-thumbnail">
-                                    <img src="/images/instructor/inst-thumb-<?php echo $dataValue['id'] ?>.jpg" class="suck">
-                                  </div>
-                                  <div class="area-content">
-                                    <h3 class="area-title"><?php echo $dataValue['name']; ?></h3>
-                                    <p class="area-description"><span>活動エリア：</span><?php echo $area; ?></p>
-                                  </div>
-                                  <div class="area-footer">
-                                    <select class="form-control case">
-                                    <?php foreach($dataClass->getValues(2) as $key => $value) : ?>
-                                      <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
-                                    <?php endforeach; ?>
-                                    </select>
-                                    <input type="hidden" class="data-id" value="<?php echo $dataValue['id'] ?>">
-                                  </div>
-                                </div>
-                              </div>
-                              <?php
-                                  endif;
-                                endforeach;
-                              ?>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
-                              <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bd-instructor-modal-lg">インストラクターを追加</button>
-                            </div>
-                            <?php include( WORKSPACE . '/include/modal-instructor.php'); ?>
-                          </div>
-                        </div><!-- /x-content -->
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div><!-- col-center -->
 
               <div class="col-footer">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

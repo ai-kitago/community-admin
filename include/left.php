@@ -86,13 +86,14 @@
                     </a>
                     <ul class="nav child_menu">
                       <li>
-                        <a href="form.html">求人一覧</a>
+                        <a href="/page/job/">求人一覧</a>
                       </li>
                       <li>
-                        <a href="form.html">求人登録</a>
+                        <a href="/page/job/edit.php">求人登録</a>
                       </li>
                     </ul>
                   </li>
+                  <!--
                   <li>
                     <a>
                       <i class="fa fa-bookmark-o"></i>
@@ -108,6 +109,7 @@
                       </li>
                     </ul>
                   </li>
+                  -->
                 </ul>
               </div>
 

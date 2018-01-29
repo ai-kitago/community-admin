@@ -327,7 +327,7 @@
                         </div><!-- /x-content -->
                       </div>
                     </div>
-
+                    
                     <div class="col-xs-12">
                       <div class="x_panel">
                         <div class="x_title">
@@ -343,6 +343,7 @@
                           <div class="row">
                             <div class="col-xs-12">
                               <h4>登録資格</h4>
+                              <?php /*
                               <!--
                               <div id="license-list" class="list-js">
                                 <ul class="list list-group">
@@ -446,10 +447,10 @@
                                 </div>
                                 <?php include( WORKSPACE . '/include/modal-license.php'); ?>
                               </div>
+                              */ ?>
                               <div class="row">
                                 <div class="col-md-12 col-sm-12 col-xs-12">
-                                  <h4>登録資格がない場合</h4>
-                                  <textarea id="license-free" class="form-control resize-vertical mb-pc-20" name="license-free" rows="10" placeholder="資格の登録がない場合などにご記入ください" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="プロフィールが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                                  <textarea id="license-free" class="form-control resize-vertical mb-pc-20" name="license-free" rows="10" placeholder="お持ちの資格ご記入ください" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="プロフィールが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
                                 </div>
                               </div>
                             </div>
