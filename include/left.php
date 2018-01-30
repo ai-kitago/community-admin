@@ -125,6 +125,13 @@
                     </ul>
                   </li>
                   -->
+                  <li>
+                    <a href="/page/company/">
+                      <i class="fa fa-building"></i>
+                      <div class="menu_title">企業<small>Company</small></div>
+                      <span class="fa fa-chevron-right"></span>
+                    </a>
+                  </li>
                 </ul>
               </div>
 
