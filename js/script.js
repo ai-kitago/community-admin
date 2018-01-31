@@ -86,6 +86,57 @@ $(function(){
       formData.append("hoge", hogeParam);
     });
   }
+  
+  if($('#myLogo').length){
+    var hogeParam = "hoge";
+    // Dropzone設定
+    Dropzone.autoDiscover = false;
+    // Dropzoneフォームのidをキャメルケースで記述
+    //Dropzone.options.myAwesomeDropzone = {};
+    Dropzone.options.myLogo = {
+      url: "./",
+      method: "post",
+      withCredentials: false,
+      parallelUploads: 1,
+      uploadMultiple: false,
+      maxFilesize: 1,
+      paramName: "file",
+      createImageThumbnails: true,
+      maxThumbnailFilesize: 10,
+      thumbnailWidth: 300,
+      thumbnailHeight: 300,
+      filesizeBase: 1000,
+      maxFiles: 1,
+      params: {},
+      clickable: true,
+      ignoreHiddenFiles: true,
+      acceptedFiles: ".jpg,.jpeg,.png,.gif",
+      acceptedMimeTypes: null,
+      autoProcessQueue: true,
+      autoQueue: true,
+      addRemoveLinks: true,
+      previewsContainer: null,
+      hiddenInputContainer: "body",
+      capture: null,
+      renameFilename: null,
+      dictDefaultMessage: "<span>【ロゴ画像】</span><br>このエリアにドロップしてください",
+      dictFallbackMessage: "Your browser does not support drag'n'drop file uploads.",
+      dictFallbackText: "Please use the fallback form below to upload your files like in the olden days.",
+      dictFileTooBig: "ファイルが大き過ぎます ({{filesize}}MB). 最大: {{maxFilesize}}MB.",
+      dictInvalidFileType: "このタイプのファイルはアップロードできません。",
+      dictResponseError: "Server responded with {{statusCode}} code.",
+      dictCancelUpload: "Cancel upload",
+      dictCancelUploadConfirmation: "Are you sure you want to cancel this upload?",
+      dictRemoveFile: "",
+      dictRemoveFileConfirmation: null,
+      dictMaxFilesExceeded: "You can not upload any more files."
+    };
+  
+    var myDropzone = new Dropzone("div#myLogo",{url:"./"});
+    myDropzone.on("sending", function(file,xhr,formData) {
+      formData.append("hoge", hogeParam);
+    });
+  }
 
   if($('#myPose').length){
     Dropzone.options.myPose = {

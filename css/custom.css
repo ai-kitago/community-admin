@@ -15813,8 +15813,15 @@ body {
   right: 15px;
 }
 
+/* line 14, ../sass/parts/_modal.scss */
+.modal-footer .save-select {
+  width: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
 @media (max-width: 768px) {
-  /* line 16, ../sass/parts/_modal.scss */
+  /* line 24, ../sass/parts/_modal.scss */
   .modal .modal-body {
     padding: 10px;
   }

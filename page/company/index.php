@@ -324,14 +324,18 @@
                   <div class="ln_solid"></div>
                     <div class="form-group text-center">
                       <div class="col-md-2 col-md-offset-4 col-sm-3 col-sm-offset-3 col-xs-6">
-                        <button type="button" class="btn btn-primary btn-block">非公開</button>
+                        <select class="form-control">
+                          <option>公開</option>
+                          <option>非公開</option>
+                          <option>削除</option>
+                        </select>
                       </div>
                       <div class="col-md-2 col-sm-3 col-xs-6">
-                        <button type="submit" class="btn btn-success btn-block">保存</button>
+                        <button type="submit" class="btn btn-success btn-block">実行</button>
                       </div>
                     </div>
                 </div>
-              </div>
+              </div><!-- col-footer -->
 
             </div>
           </form>

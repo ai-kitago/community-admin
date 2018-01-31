@@ -73,9 +73,19 @@
                                 </div>
                               </div>
                             </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4 col-sm-12 col-xs-12">
+                              <h4>ロゴ</h4>
+                              <div class="logo_img">
+                                <div id="crop-pose">
+                                  <div id="myLogo" class="dropzone dz-clickable"></div>
+                                </div>
+                              </div>
+                            </div>
       
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                              <h4>スタジオ画像</h4>
+                            <div class="col-md-8 col-sm-12 col-xs-12">
+                              <h4>スタジオイメージ</h4>
                               <div class="pose_img">
                                 <div id="crop-pose">
                                   <div id="myPose" class="dropzone dz-clickable"></div>
@@ -237,10 +247,39 @@
                                             <span class="option-name">初心者割引</span>
                                           </div>
                                         </div>
+                                        <div class="col col-md-6">
+                                          <div class="md-checkbox">
+                                            <input id="option-02" type="checkbox" value="option-02"><label for="option-02"></label>
+                                            <span class="option-name">レンタルスタジオ</span>
+                                          </div>
+                                        </div>
+                                        <div class="col col-md-6">
+                                          <div class="md-checkbox">
+                                            <input id="option-03" type="checkbox" value="option-03"><label for="option-03"></label>
+                                            <span class="option-name">ヨガマットレンタル</span>
+                                          </div>
+                                        </div>
+                                        <div class="col col-md-6">
+                                          <div class="md-checkbox">
+                                            <input id="option-04" type="checkbox" value="option-04"><label for="option-04"></label>
+                                            <span class="option-name">女性限定クラス</span>
+                                          </div>
+                                        </div>
+                                        <div class="col col-md-6">
+                                          <div class="md-checkbox">
+                                            <input id="option-05" type="checkbox" value="option-05"><label for="option-05"></label>
+                                            <span class="option-name">シャワールーム</span>
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
-                                  
+                                  <div class="form-group">
+                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">レンタルスタジオ</label>
+                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                      <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="レンタルスタジオの詳細をご記入ください。" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="プロフィールが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                                    </div>
+                                  </div>
                                   <div class="form-group">
                                     <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">紹介文</label>
                                     <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
@@ -595,6 +634,84 @@
                         </div><!-- /x-content -->
                       </div>
                     </div>
+                    
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="x_panel">
+                        <div class="x_title">
+                          <h2>クーポン<small>Coupon</small></h2>
+                          <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                          </ul>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+                          <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 table-add-row coupon-add">
+                              <table class="table table-striped table-bordered">
+                                <tbody>
+                                  <tr>
+                                    <td class="td-news">
+                                      <div class="mb-pc-10">
+                                        <input type="text" class="form-control" placeholder="クーポン名">
+                                      </div>
+                                      <textarea class="form-control resize-vertical" placeholder="クーポンのの内容を記入"></textarea>
+                                    </td>
+                                    <td class="td-button">
+                                      <button class="btn btn-default btn-circle btn-remove-row">－</button>
+                                    </td>
+                                  </tr>
+                                  <tr class="tr-add-row">
+                                    <td class="td-news">
+                                      <div class="mb-pc-10">
+                                        <input type="text" class="form-control" placeholder="クーポン名">
+                                      </div>
+                                      <textarea class="form-control resize-vertical" placeholder="クーポンの内容を記入"></textarea>
+                                    </td>
+                                    <td class="td-button">
+                                      <button class="btn btn-default btn-circle btn-plug-row">＋</button>
+                                      <button class="btn btn-default btn-circle btn-remove-row">－</button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <script>
+                                <!--
+                                  $(function(){
+                                    var tr;
+                                    var element = $('.coupon-add');
+                                    element.find('.btn-add-row').on('click',function(){
+                                      tr = element.find('.tr-add-row').clone(true);
+                                      $(this).closest('.table-add-row').find('tbody .tr-add-row').before(tr);
+                                      tr.fadeIn(500).removeClass('tr-add-row');
+                                      _texrareaAutoHeight();
+                                      _checkRowNumber(element,3);
+                                      return false;
+                                    });
+                                    element.find('.btn-plug-row').on('click',function(){
+                                      tr = element.find('.tr-add-row').clone(true);
+                                      $(this).closest('tr').before(tr);
+                                      tr.fadeIn(500).removeClass('tr-add-row');
+                                      _texrareaAutoHeight();
+                                      _checkRowNumber(element,3);
+                                      return false;
+                                    });
+                                    element.find('.btn-remove-row').on('click',function(){
+                                      tr = $(this).closest('tr');
+                                      tr.fadeOut(500,function(){
+                                        tr.remove();
+                                        _checkRowNumber(element,3);
+                                      });
+                                      return false;
+                                    });
+                                  });
+                                -->
+                              </script>
+                              <button class="btn btn-default btn-add-row">クーポンを追加</button>
+                            </div>
+                          </div>
+                        </div><!-- /x-content -->
+                      </div>
+                    </div>
 
                     <div class="col-xs-12">
                       <div class="x_panel">
@@ -824,10 +941,14 @@
                   <div class="ln_solid"></div>
                     <div class="form-group text-center">
                       <div class="col-md-2 col-md-offset-4 col-sm-3 col-sm-offset-3 col-xs-6">
-                        <button type="button" class="btn btn-primary btn-block">非公開</button>
+                        <select class="form-control">
+                          <option>公開</option>
+                          <option>非公開</option>
+                          <option>削除</option>
+                        </select>
                       </div>
                       <div class="col-md-2 col-sm-3 col-xs-6">
-                        <button type="submit" class="btn btn-success btn-block">保存</button>
+                        <button type="submit" class="btn btn-success btn-block">実行</button>
                       </div>
                     </div>
                 </div>
