@@ -1,8 +1,7 @@
-<?php include('../../function/function.php'); ?>
+<?php include( '../../function/function.php'); ?>
 <?php include ( WORKSPACE . '/include/header.php' ); ?>
-
-        <!-- page content -->
-        <main class="studio-edit right_col" role="main">
+<?php include ( WORKSPACE . '/include/navigation.php' ); ?>
+<section class="mypage-section">
           <form class="forms" data-parsley-validate novalidate>
 
             <div class="page-title">
@@ -601,7 +600,5 @@
 
             </div>
           </form>
-        </main>
-        <!-- /page content -->
-
-<?php include( WORKSPACE . '/include/footer.php' ); ?>
+</section>
+<?php include ( WORKSPACE . '/include/footer.php' ); ?>

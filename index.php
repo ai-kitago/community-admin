@@ -1,9 +1,8 @@
-<?php include 'include/header.php'; ?>
-
-        <!-- page content -->
-        <main class="right_col" role="main">
-          <div class="">
-
+<?php include( dirname(__FILE__) . '/function/function.php'); ?>
+<?php include ( WORKSPACE . '/include/header.php' ); ?>
+<?php include ( WORKSPACE . '/include/navigation.php' ); ?>
+<section class="mypage-section">
+    <form>
             <div class="page-title">
               <div class="title_left">
                 <h1>お知らせ <small>Information</small></h1>
@@ -335,8 +334,8 @@
                 </div>
               </div>
             </div>
-          </div>
-        </main>
-        <!-- /page content -->
 
-<?php include 'include/footer.php'; ?>
+
+    </form>
+</section>
+<?php include ( WORKSPACE . '/include/footer.php' ); ?>

@@ -31,5 +31,5 @@
     <body>
         <div class="animsition">
             <div class="mypage">
-                <?php include( WORKSPACE . '/include/left.php' ); ?>
+                <?php include( 'left.php' ); ?>
                 <main class="main">

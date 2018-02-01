@@ -1,4 +1,3 @@
-<?php include( dirname(__FILE__) . '/../function/function.php'); ?>
                     <footer class="mypage-footer">
                         <p>yogageneration by <a href="http://ohanasmile.com/">OHANAsmile inc.</a></p>
                     </footer>

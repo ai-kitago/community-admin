@@ -1,32 +1,13 @@
 @import "compass";
 @import "bootstrap";
 
-$primary: $brand-primary;
-$secondary: $brand-secondary;
-
-$white: #fff;
-$brown: #7a706f;
-
-//$main-background: #F7F7F7;
-$main-background: #ffffff;
-
-$left-background: #7a706f;
-$left-width: 280px;
-$left-width-sp: 280px;
-$left-border: rgba(255,255,255,0.4);
-//$left-border: #A6A6A6;
-//$font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
-$font-family: "Helvetica", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-
-$text-dark: #fefefe;
-
-//background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+@import "custom/palette";
 
 body {
   color: $gray;
-  background: $brown;
+  //background: $brown;
   //@include background(linear-gradient(20deg,$primary 40%, $secondary 60%));
-  font-family: $font-family;
+  //font-family: $font-family;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.471;
@@ -827,6 +808,7 @@ a:hover, a:focus {
   display: block;
   padding: 4px 6px;
 }
+/*
 footer {
   //background: #fff;
   background: $left-background;
@@ -840,7 +822,7 @@ footer {
     }
   }
 }
-
+*/
 .nav-sm footer {
   margin-left: 70px ;
 }
@@ -1758,7 +1740,7 @@ span.right {
 
 @media (min-width: 992px) {
   footer {
-    margin-left: $left-width;
+    //margin-left: $left-width;
   }
 }
 

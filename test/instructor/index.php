@@ -1,6 +1,5 @@
-<?php include( '../../function/function.php'); ?>
-<?php include ( WORKSPACE . '/include/header.php' ); ?>
-<?php include ( WORKSPACE . '/include/navigation.php' ); ?>
+<?php include  '../header.php'; ?>
+<?php include '../navigation.php'; ?>
 <section class="mypage-section">
     <form class="forms" data-parsley-validate novalidate>
         <div class="page-title">
@@ -410,4 +409,4 @@
         </div>
     </form>
 </section>
-<?php include ( WORKSPACE . '/include/footer.php' ); ?>
+<?php include '../footer.php' ?>
