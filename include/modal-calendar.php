@@ -41,32 +41,29 @@
       </div>
       <div class="modal-body">
         <div id="monthly-form">
+
           <div class="row">
-            <div class="col-xs-6 mb-pc-10">
+            <div class="col-sm-4 col-xs-12 mb-pc-10">
               <label>開催日</label>
               <input type="text" class="class-startdate form-control datepicker" placeholder="開催日" value="">
             </div>
-            <div class="col-xs-6 mb-pc-10">
-              <label>終了日</label>
-              <input type="text" class="class-enddate form-control datepicker" placeholder="終了日" value="">
+            <div class="col-sm-4 col-xs-6 mb-pc-10">
+              <label>開始時間</label>
+              <input type="text" class="class-starttime form-control timepicker" placeholder="開始時間">
+            </div>
+            <div class="col-sm-4 col-xs-6 mb-pc-10">
+              <label>終了時間</label>
+              <input type="text" class="class-endtime form-control timepicker" placeholder="終了時間">
             </div>
           </div>
+
           <div class="row">
             <div class="col-xs-12 mb-pc-10">
               <label>タイトル</label>
               <input type="text" class="class-name form-control" placeholder="タイトル">
             </div>
           </div>
-          <div class="row">
-            <div class="col-xs-6 mb-pc-10">
-              <label>開始時間</label>
-              <input type="text" class="class-starttime form-control timepicker" placeholder="開始時間">
-            </div>
-            <div class="col-xs-6 mb-pc-10">
-              <label>終了時間</label>
-              <input type="text" class="class-endtime form-control timepicker" placeholder="終了時間">
-            </div>
-          </div>
+
           <div class="row">
             <div class="col-xs-12 mb-pc-10">
               <label>インストラクター</label>
@@ -92,8 +89,13 @@
       </div>
       <div class="modal-footer">
         <input type="hidden" class="class-id" value="">
+        <select class="save-select form-control">
+          <option value="public">公開</option>
+          <option value="private">非公開</option>
+        </select>
         <button type="button" class="class-save btn btn-primary">保存</button>
         <button type="button" class="class-remove btn btn-secondary">削除</button>
+
         <button type="button" data-dismiss="modal" class="btn btn-default">閉じる</button>
       </div>
     </div>

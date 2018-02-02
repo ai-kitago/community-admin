@@ -1,32 +1,15 @@
 @import "compass";
-@import "bootstrap";
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
 
-$primary: $brand-primary;
-$secondary: $brand-secondary;
-
-$white: #fff;
-$brown: #7a706f;
-
-//$main-background: #F7F7F7;
-$main-background: #ffffff;
-
-$left-background: #7a706f;
-$left-width: 280px;
-$left-width-sp: 280px;
-$left-border: rgba(255,255,255,0.4);
-//$left-border: #A6A6A6;
-//$font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
-$font-family: "Helvetica", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-
-$text-dark: #fefefe;
-
-//background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+@import "custom/palette";
 
 body {
   color: $gray;
-  background: $brown;
+  //background: $brown;
   //@include background(linear-gradient(20deg,$primary 40%, $secondary 60%));
-  font-family: $font-family;
+  //font-family: $font-family;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.471;
@@ -134,7 +117,7 @@ body {
   display: none;
 }
 .menu_section {
-  margin-bottom: 35px;
+  //padding-bottom: 80px;
 }
 .menu_section h3 {
   padding-left: 23px;
@@ -827,6 +810,7 @@ a:hover, a:focus {
   display: block;
   padding: 4px 6px;
 }
+/*
 footer {
   //background: #fff;
   background: $left-background;
@@ -840,7 +824,7 @@ footer {
     }
   }
 }
-
+*/
 .nav-sm footer {
   margin-left: 70px ;
 }
@@ -1758,7 +1742,7 @@ span.right {
 
 @media (min-width: 992px) {
   footer {
-    margin-left: $left-width;
+    //margin-left: $left-width;
   }
 }
 
@@ -4537,124 +4521,12 @@ ul.notifications {
 }
 /** /FullCalendar **/
 
-.profile_img {
-  margin-bottom: 20px;
-  position: relative;
-  &:before {
-    display: block;
-    content: '';
-    padding-top: 100%;
-  }
-  #crop-avatar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    // 画像がエリアからはみ出さないようにする
-    overflow: hidden;
-  }
-}
 
-.pose_img {
-  margin-bottom: 20px;
-  position: relative;
-  #crop-pose {
-    width: 100%;
-    height: auto;
-    text-align: center;
-  }
-}
-
-
-/** Dropzone.js **/
-
-.dropzone {
-  width: 100%;
-  padding: 0;
-  background: transparent;
-  border: 1px solid #e5e5e5;
-  position: relative;
-  //min-height: 130px;
-  display: table;
-  &.dz-drag-hover {
-    background: lighter($primary,20%);
-  }
-  .dz-preview {
-    //margin: 0;
-    //display: inline-block;
-    .dz-image {
-      @include border-radius(0);
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-    .dz-remove {
-      width: 30px;
-      height: 30px;
-      padding: 6px;
-      color: $white;
-      background: $gray-light;
-      @include border-radius(4px);
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      z-index: 30;
-      display: inline-block;
-      font: normal normal normal 14px/1 FontAwesome;
-      font-size: 18px;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      &:before {
-        content: "\f1f8";
-      }
-      &:hover {
-        text-decoration: none;
-        @include opacity(0.8);
-      }
-    }
-  }
-  .dz-message {
-    padding: 0 20px;
-    vertical-align: middle;
-    display: table-cell;
-  }
-}
-
-.avatarzone {
-  min-height: 100%;
-  .dz-preview {
-    margin: 0;
-    display: block;
-    .dz-image {
-      width: 100%;
-      height: 100%;
-      @include border-radius(0);
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-    .dz-error-message {
-      width: 100%;
-      @include border-radius(0);
-      top: auto;
-      left: auto;
-      bottom: 0;
-      &:after {
-        content: none;
-      }
-    }
-  }
-}
-
-/** /Dropzone.js **/
 @import "custom/studio";
 
 @import "custom/navigation";
 
+@import "parts/dropzone";
 @import "parts/list";
 @import "parts/table";
 @import "parts/form";
@@ -4668,3 +4540,4 @@ ul.notifications {
 @import "parts/area";
 @import "parts/calendar";
 @import "parts/drag";
+@import "parts/tab";

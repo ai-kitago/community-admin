@@ -1,8 +1,7 @@
-<?php include('../../function/function.php'); ?>
+<?php include( '../../function/function.php'); ?>
 <?php include ( WORKSPACE . '/include/header.php' ); ?>
-
-        <!-- page content -->
-        <main class="studio-edit right_col" role="main">
+<?php include ( WORKSPACE . '/include/navigation.php' ); ?>
+<section class="mypage-section">
           <form class="forms" data-parsley-validate novalidate>
 
             <div class="page-title">
@@ -209,6 +208,15 @@
                       </div>
                     </div>
 
+                    
+                  </div>
+                </div>
+              </div><!-- col-left -->
+              
+              <div class="col-right">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <div class="row">
+                    
                     <div class="col-xs-12">
                       <div class="x_panel">
                         <div class="x_title">
@@ -223,7 +231,16 @@
                         <div class="x_content">
                           <div class="row">
                             
-                            <div class="col-xs-12">
+                            <div>
+                              <ul class="tab-ul">
+                                <li class="select">登録スタジオ</li>
+                                <li>新規開催地</li>
+                              </ul>
+                            </div>
+                            
+                            <div class="tab-content">
+
+                            <div class="tab-li col-xs-12">
                               <h4>開催スタジオ</h4>
                               <div id="event-studio-list">
                                 <div class="row">
@@ -306,7 +323,7 @@
       
                             </div>
 
-                            <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="tab-li col-md-12 col-sm-12 col-xs-12" style="display: none;">
                               <h4>地図情報</h4>
                               <div class="form-horizontal form-label-left">
                                 <div class="row">
@@ -486,18 +503,20 @@
                                 </div>
                               </div>
                             </div>
+                            
+                            </div><!-- tab-content -->
+                            
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div><!-- col-left -->
-              
-              <div class="col-right">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                  <div class="row">
+              </div><!-- col-right -->
 
+              <div class="col-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="row">
                     <div class="col-xs-12">
                       <div class="x_panel">
                         <div class="x_title">
@@ -522,7 +541,7 @@
                                       if($i != count($dataValue['area']) - 1) $area .= '、';
                                     endfor;
                               ?>
-                              <div class="col-lg-4 col-md-3 col-sm-3 col-xs-6">
+                              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
                                 <div class="area">
                                   <div class="area-thumbnail">
                                     <img src="/images/instructor/inst-thumb-<?php echo $dataValue['id'] ?>.jpg" class="suck">
@@ -559,17 +578,21 @@
 
                   </div>
                 </div>
-              </div><!-- col-right -->
+              </div><!-- col-center -->
 
               <div class="col-footer">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="ln_solid"></div>
                     <div class="form-group text-center">
                       <div class="col-md-2 col-md-offset-4 col-sm-3 col-sm-offset-3 col-xs-6">
-                        <button type="button" class="btn btn-primary btn-block">非公開</button>
+                        <select class="form-control">
+                          <option>公開</option>
+                          <option>非公開</option>
+                          <option>削除</option>
+                        </select>
                       </div>
                       <div class="col-md-2 col-sm-3 col-xs-6">
-                        <button type="submit" class="btn btn-success btn-block">保存</button>
+                        <button type="submit" class="btn btn-success btn-block">実行</button>
                       </div>
                     </div>
                 </div>
@@ -577,7 +600,5 @@
 
             </div>
           </form>
-        </main>
-        <!-- /page content -->
-
-<?php include( WORKSPACE . '/include/footer.php' ); ?>
+</section>
+<?php include ( WORKSPACE . '/include/footer.php' ); ?>

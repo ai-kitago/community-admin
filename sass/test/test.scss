@@ -1,0 +1,269 @@
+@import "compass";
+//@import "bootstrap";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+@import "custom/palette";
+
+* {
+    outline: none;
+}
+
+img {
+    &:link,
+    &:visited,
+    &:active,
+    &:hover {
+        outline: none !important;
+    }
+}
+
+$header-height: 67px;
+$footer-height: 42px;
+$left_nav_width: 290px;
+$background: #7a706f;
+$border: #ccc;
+
+body {
+    .nav-left {
+        width: $left_nav_width;
+        height: 100vh;
+        padding-bottom: 60px;
+        background: $background;
+        overflow: auto;
+        position: fixed;
+        float: left;
+        .mypage-logo {
+            height: $header-height;
+            padding: 13px 0;
+            text-align: center;
+            //border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            border-bottom: 1px solid $border;
+            img {
+                width: 200px;
+                height: 40px;
+            }
+        }
+        
+        .nav-left-menu {
+            //height: 2000px;
+            //margin-bottom: $footer-height;
+        }
+        .nav-left-footer {
+            //width: 100%;
+            width: $left_nav_width;
+            height: $footer-height;
+            position: fixed;
+            bottom: 0;
+            ul {
+                width: 100%;
+                height: $footer-height;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                background: rgba(255,255,255,0.4);
+                li {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    min-height: 100%;
+    padding-top: $header-height;
+    margin-left: $left_nav_width;
+}
+
+.mypage-section {
+    min-height: calc(100% - 123px);
+    padding: 0 15px;
+}
+
+@media (max-width: $screen-sm-min) {
+
+.main {
+    margin-left: 0;
+}
+
+}
+
+.profile {
+  margin: 30px 0;
+}
+
+.profile_pic {
+    width: 100%;
+    text-align: center;
+}
+.img-circle.profile_img {
+    width: 50%;
+    margin: 0 auto 20px;
+    z-index: 1000;
+    position: inherit;
+}
+.profile_info {
+    width: 100%;
+    text-align: center;
+}
+.profile_info span {
+    font-size: 13px;
+    line-height: 30px;
+    //color: $text-dark;
+}
+.profile_info h2 {
+    font-size: 14px;
+    //color: $white;
+    margin: 0;
+    font-weight: 500;
+    small {
+        margin-top: 10px;
+        font-size: 12px;
+        //color: $text-dark;
+        display: block;
+    }
+}
+
+/**
+ * Scrollbar
+ */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .1);
+}
+::-webkit-scrollbar-thumb {
+    //background-color: rgba(0, 0, 50, .5);
+    background-color: rgba(255, 255, 255, .5);
+    //background-color: #444;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .3);
+}
+
+/**
+ *
+ */
+body{
+
+    .js-hiraku-offcanvas-body-right .js-hiraku-header-fixed {
+        margin-left: -$left_nav_width;
+    }
+    
+    .js-hiraku-offcanvas-body-left .js-hiraku-header-fixed {
+        margin-left: $left_nav_width;
+    }
+    
+    .js-hiraku-offcanvas-body-right {
+        left: 0;
+    }
+    
+    .js-hiraku-offcanvas-body-left {
+        left: 0;
+    }
+    
+    .js-hiraku-offcanvas-active .js-hiraku-offcanvas-sidebar {
+        width: $left_nav_width;
+        background: #7a706f;
+        z-index: 1001;
+    }
+    
+    &.js-hiraku-offcanvas-body-left .js-hiraku-header-fixed {
+        margin-left: $left_nav_width;
+    }
+    
+    &.js-hiraku-offcanvas-body-left {
+        left: $left_nav_width;
+    }
+    
+    .hiraku-open-btn {
+        padding: 0;
+        margin: 15px 10px;
+        border: none;
+        cursor: pointer;
+        display: block;
+    }
+    
+    .hiraku-open-btn-line {
+        width: 25px;
+        background-color: #333;
+        &:before,
+        &:after {
+            background-color: transparent;
+        }
+    }
+    
+    [aria-expanded='true'] .hiraku-open-btn-line {
+	    //background-color: #333;
+	    @include opacity(0);
+	    &:before,
+        &:after {
+            width: 30px;
+            background-color: #333;
+        }
+        &:before {
+            top: 0;
+        }
+        &:after {
+            top: 12px;
+        }
+        &:first-of-type {
+            @include opacity(1);
+        }
+    }
+}
+
+.mypage-header {
+    height: $header-height;
+    background: $white;
+    border-bottom: 1px solid $border;
+    z-index: 1000;
+}
+
+.mypage-footer {
+    width: 100%;
+    height: $footer-height;
+    padding: 10px 10px;
+    background: $background;
+    text-align: right;
+    p {
+        margin: 0;
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+
+body {
+    .js-hiraku-offcanvas-active .js-hiraku-offcanvas-sidebar {
+        margin-left: 0;
+    }
+}
+
+.js-hiraku-offcanvas-body-left {
+    .main {
+        margin-left: 0;
+    }
+}
+
+.main {
+    
+}
+
+.js-hiraku-offcanvas-active {
+    width: auto;
+    height: auto;
+    background: none;
+    position: static;
+    z-index: 0;
+    display: block;
+}
+
+.hiraku-open-btn {
+    display: none;
+}
+
+}
+
+//@import "test/nav";

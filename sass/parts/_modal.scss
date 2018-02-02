@@ -10,6 +10,14 @@
     }
 }
 
+.modal-footer {
+    .save-select {
+        width: auto;
+        vertical-align: middle;
+        display: inline-block;
+    }
+}
+
 @media (max-width: $screen-sm-min) {
 
 .modal {
