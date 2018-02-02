@@ -1,6 +1,6 @@
 $(function(){
   
-  if(!$('main.studio-edit').length) return;
+  //if(!$('main.studio-edit').length) return;
   
   $('.calendar-nav button').on('click',function(){
     return false;

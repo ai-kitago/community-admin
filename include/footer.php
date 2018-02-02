@@ -9,7 +9,6 @@
         <!-- <script src="/vendors/bootstrap/dist/js/bootstrap.min.js"></script> -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="/vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-        <link href="/vendors/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
         
         <script src="/test/lib/hiraku/hiraku.js"></script>
         <script src="/test/lib/animsition/js/animsition.min.js"></script>
@@ -89,6 +88,5 @@
         <!-- Custom Theme Scripts -->
         <script src="/build/js/custom.js"></script>
         <script src="/js/script.js"></script>
-        <script src="/test/js/script.js"></script>
     </body>
 </html>

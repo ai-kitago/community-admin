@@ -20,13 +20,14 @@
     <link href="/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
     <link href="/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
     <link href="/vendors/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+    <link href="/vendors/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     
     <link href="/vendors/clockpicker/bootstrap-clockpicker.min.css" rel="stylesheet">
     
     <link href="/test/lib/hiraku/hiraku.css" rel="stylesheet">
     <link href="/test/lib/animsition/css/animsition.min.css" rel="stylesheet">
-    <link href="/css/custom.css" rel="stylesheet">
     <link href="/css/test/test.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
     </head>
     <body>
         <div class="animsition">

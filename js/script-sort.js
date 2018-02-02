@@ -40,7 +40,7 @@ jQuery(function($){
                 + element.find('.table-pref').attr('data-pref-name')
                 +'</span>'
                 +'<select class="form-control case">'
-                +'<option value="set">申請準備</option>'
+                +'<option value="set">追加準備</option>'
                 +'<option value="delete">解除</option>'
                 +'</select>'
                 +'<input type="hidden" value="' + id + '">'
@@ -48,7 +48,7 @@ jQuery(function($){
             );
             //studiolist.add({ 'shop-name': element.find('.table-title').attr('data-name'), 'pref-name': element.find('.table-pref').attr('data-pref-name') });
             $('#modal-studio-list .data-id-' + id).prop('disabled',true);
-            $('#modal-studio-list .data-id-' + id).text('申請済');
+            $('#modal-studio-list .data-id-' + id).text('追加済');
             return false;
         });
     };
@@ -57,7 +57,7 @@ jQuery(function($){
             var id = $(this).val();
             //console.log(id);
             $('#modal-studio-list .data-id-' + id).prop('disabled',true);
-            $('#modal-studio-list .data-id-' + id).text('申請済');
+            $('#modal-studio-list .data-id-' + id).text('追加済');
         });
     };
 });
@@ -115,7 +115,7 @@ jQuery(function($){
                 + element.find('.event-area').attr('data-area')
                 +'</span>'
                 +'<select class="form-control case">'
-                +'<option value="set">申請準備</option>'
+                +'<option value="set">追加準備</option>'
                 +'<option value="delete">解除</option>'
                 +'</select>'
                 +'<input type="hidden" value="' + id + '">'
@@ -123,7 +123,7 @@ jQuery(function($){
             );
             //studiolist.add({ 'shop-name': element.find('.table-title').attr('data-name'), 'pref-name': element.find('.table-pref').attr('data-pref-name') });
             $('#modal-event-list .data-id-' + id).prop('disabled',true);
-            $('#modal-event-list .data-id-' + id).text('申請済');
+            $('#modal-event-list .data-id-' + id).text('追加済');
             return false;
         });
     };
@@ -132,7 +132,7 @@ jQuery(function($){
             var id = $(this).val();
             //console.log(id);
             $('#modal-event-list .data-id-' + id).prop('disabled',true);
-            $('#modal-event-list .data-id-' + id).text('申請済');
+            $('#modal-event-list .data-id-' + id).text('追加済');
         });
     };
 });
@@ -156,7 +156,7 @@ jQuery(function($){
                 +'</div>'
                 +'<div class="area-footer">'
                 +'<select class="form-control case">'
-                +'<option value="set">申請準備</option>'
+                +'<option value="set">追加準備</option>'
                 +'<option value="delete">解除</option>'
                 +'</select>'
                 +'<input type="hidden" value="' + id + '">'
@@ -166,7 +166,7 @@ jQuery(function($){
             );
             //studiolist.add({ 'shop-name': element.find('.table-title').attr('data-name'), 'pref-name': element.find('.table-pref').attr('data-pref-name') });
             $('#modal-instructor-list .data-id-' + id).prop('disabled',true);
-            $('#modal-instructor-list .data-id-' + id).text('申請済');
+            $('#modal-instructor-list .data-id-' + id).text('追加済');
             return false;
         });
     };
@@ -175,7 +175,7 @@ jQuery(function($){
             var id = $(this).val();
             //console.log(id);
             $('#modal-instructor-list .data-id-' + id).prop('disabled',true);
-            $('#modal-instructor-list .data-id-' + id).text('申請済');
+            $('#modal-instructor-list .data-id-' + id).text('追加済');
         });
     };
 });
@@ -245,7 +245,7 @@ jQuery(function($){
             
             //studiolist.add({ 'shop-name': element.find('.table-title').attr('data-name'), 'pref-name': element.find('.table-pref').attr('data-pref-name') });
             $('#modal-license-studio-list .data-id-' + id).prop('disabled',true);
-            $('#modal-license-studio-list .data-id-' + id).text('申請済');
+            $('#modal-license-studio-list .data-id-' + id).text('追加済');
             addSelect();
             return false;
         });
@@ -254,7 +254,7 @@ jQuery(function($){
         $('#license-studio-list .list .data-id').each(function(){
             var id = $(this).val();
             $('#modal-license-studio-list .data-id-' + id).prop('disabled',true);
-            $('#modal-license-studio-list .data-id-' + id).text('申請済');
+            $('#modal-license-studio-list .data-id-' + id).text('追加済');
         });
     };
     function addSelect(){
@@ -298,7 +298,7 @@ jQuery(function($){
             
             //studiolist.add({ 'shop-name': element.find('.table-title').attr('data-name'), 'pref-name': element.find('.table-pref').attr('data-pref-name') });
             $('#modal-event-studio-list .data-id-' + id).prop('disabled',true);
-            $('#modal-event-studio-list .data-id-' + id).text('申請済');
+            $('#modal-event-studio-list .data-id-' + id).text('追加済');
             addSelect();
             return false;
         });
@@ -307,7 +307,7 @@ jQuery(function($){
         $('#event-studio-list .list .data-id').each(function(){
             var id = $(this).val();
             $('#modal-event-studio-list .data-id-' + id).prop('disabled',true);
-            $('#modal-event-studio-list .data-id-' + id).text('申請済');
+            $('#modal-event-studio-list .data-id-' + id).text('追加済');
         });
     };
     function addSelect(){
@@ -357,7 +357,7 @@ jQuery(function($){
             
             //studiolist.add({ 'shop-name': element.find('.table-title').attr('data-name'), 'pref-name': element.find('.table-pref').attr('data-pref-name') });
             $('#modal-job-event-list .data-id-' + id).prop('disabled',true);
-            $('#modal-job-event-list .data-id-' + id).text('申請済');
+            $('#modal-job-event-list .data-id-' + id).text('追加済');
             return false;
         });
     };
@@ -365,7 +365,7 @@ jQuery(function($){
         $('#job-event-list .list .data-id').each(function(){
             var id = $(this).val();
             $('#modal-job-event-list .data-id-' + id).prop('disabled',true);
-            $('#modal-job-event-list .data-id-' + id).text('申請済');
+            $('#modal-job-event-list .data-id-' + id).text('追加済');
         });
     };
     function defaultEvent(){
@@ -373,6 +373,65 @@ jQuery(function($){
         var element = $('#job-event-list .list tr');
         if(element.length > 1) {
             console.log('OK');
+            parent.find('.btn-add-row').hide();
+        }
+    }
+});
+
+jQuery(function($){
+    defaultEvent();
+    clickEvent();
+    disableEvent();
+    function clickEvent(){
+        $('#modal-job-address-list button.add').on('click',function(){
+            var id = $(this).attr('data-value');
+            //console.log(id);
+            var data = $(this).closest('.table-li');
+            var element = $('#job-address-list');
+            var tr = element.find('.tr-add-row').clone(true);
+            element.find('tbody .tr-add-row').before(tr);
+            tr.fadeIn(500).removeClass('tr-add-row');
+            _texrareaAutoHeight();
+            _checkRowNumber(element,1);
+
+            tr.find('.shop-name').text(data.find('.table-title').attr('data-value'));
+            tr.find('.child-name').text(data.find('.table-description .shop-name').attr('data-value'));
+            tr.find('.pref-name').text(data.find('.table-pref').attr('data-value'));
+            tr.find('.data-id').val(id);
+            tr.find('.btn-remove-row').attr('data-id',id);
+            
+            //studiolist.add({ 'shop-name': element.find('.table-title').attr('data-name'), 'pref-name': element.find('.table-pref').attr('data-pref-name') });
+            $('#modal-job-address-list .data-id-' + id).prop('disabled',true);
+            $('#modal-job-address-list .data-id-' + id).text('追加済');
+            addSelect();
+            return false;
+        });
+    };
+    function disableEvent(){
+        $('#job-address-list .list .data-id').each(function(){
+            var id = $(this).val();
+            $('#modal-job-address-list .data-id-' + id).prop('disabled',true);
+            $('#modal-job-address-list .data-id-' + id).text('追加済');
+        });
+    };
+    function addSelect(){
+        $('.select-studio').empty();
+        $('.select-studio').append($('<option>', { value: 'all', text: 'すべて' }));
+        $('.select-studio').append($('<option>', { value: 'not', text: '未選択' }));
+        $('#job-address-list .list .data-id').each(function(){
+            if($(this).val() != '') {
+                var value = $(this).val();
+                var element = $(this).closest('.td-question');
+                var name = element.find('.shop-name').text() + ' ' + element.find('.child-name').text();;
+                var option = $('<option>', { value: value, text: name });
+                $('.select-studio').append(option);
+            }
+        });
+    }
+    function defaultEvent(){
+        var parent = $('#job-address-list');
+        var element = $('#job-address-list .list tr');
+        if(element.length > 1) {
             parent.find('.btn-add-row').hide();
         }
     }
