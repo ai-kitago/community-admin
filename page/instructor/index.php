@@ -37,12 +37,17 @@
                                     <div class="form-horizontal form-label-left input_mask">
                                         <div class="row">
                                             <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="instructor Name">
+                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="インストラクター名">
+                                                <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                                            </div>
+                                            
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="インストラクター名（英字表記）">
                                                 <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
                                             </div>
           
                                             <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess3" placeholder="WebSite or Blog">
+                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess3" placeholder="ホームページ・サイトURL">
                                                 <span class="fa fa-globe form-control-feedback left" aria-hidden="true"></span>
                                             </div>
 
@@ -62,7 +67,7 @@
                                             </div>
 
                                             <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
+                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="メールアドレス">
                                                 <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
                                             </div>
       
@@ -88,37 +93,38 @@
                                     <h4>活動エリア</h4>
                                     <div class="">
                                         <div class="row">
-                                            <div class="col-sm-4 col-xs-12 mb-sp-10">
+                                            <div class="col-sm-4 col-xs-12 mb-sm-10 mb-sp-10">
                                                 <select class="form-control" name="area[]">
                                                     <option>選択してください</option>
                                                     <?php echo $cdClass->prefSelect(); ?>
                                                 </select>
                                             </div>
-                                            <div class="col-sm-4 col-xs-12 mb-sp-10">
+                                            <div class="col-sm-4 col-xs-12 mb-sm-10 mb-sp-10">
                                                 <select class="form-control" name="area[]">
                                                     <option>選択してください</option>
                                                     <?php echo $cdClass->prefSelect(); ?>
                                                 </select>
                                             </div>
-                                            <div class="col-sm-4 col-xs-12 mb-sp-10">
+                                            <div class="col-sm-4 col-xs-12 mb-sm-10 mb-sp-10">
                                                 <select class="form-control" name="area[]">
                                                     <option>選択してください</option>
                                                     <?php echo $cdClass->prefSelect(); ?>
                                                 </select>
                                             </div>
                                         </div>
+                                        <p class="notice"><small>※最大3つの活動エリアを登録できます。</small></p>
                                     </div>
                                 </div>
       
                                 <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <h4>ヨガのスタイル</h4>
+                                    <h4>ヨガのスタイル（複数選択可）</h4>
                                     <div id="style-list" class="list-js">
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 col-xs-8">
-                                                <input type="text" class="search form-control" placeholder="絞り込み" />
+                                                <input type="text" class="search form-control" placeholder="絞り込み検索" />
                                             </div>
                                             <div class="col-md-3 col-sm-3 col-xs-4">
-                                                <button class="btn btn-default btn-block sort" data-sort="style-name">ソート</button>
+                                                <button class="btn btn-default btn-block sort" data-sort="style-name">五十音順</button>
                                             </div>
                                         </div>
                                         <ul class="list list-group">
@@ -307,8 +313,9 @@
       
                                     <div class="row">
                                         <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <h4>登録スタジオがない場合</h4>
-                                            <textarea id="studio-free" class="form-control resize-vertical mb-pc-20" name="studio-free" rows="10" placeholder="スタジオの登録がない場合などにご記入ください" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="プロフィールが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                                            <h4>上記スタジオ追加画面にスタジオ登録がない場合、ご入力ください</h4>
+                                            <textarea id="studio-free" class="form-control resize-vertical mb-pc-10" name="studio-free" rows="10" placeholder="スタジオの登録がない場合などにご記入ください" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="プロフィールが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                                            <p class="notice"><small>※スタジオを登録したい方：WEBサイトをお持ちの方であれば<a href="https://community-front-yogageneration.c9users.io/signup/business/" target="_blank">ビジネス登録</a>よりスタジオをご登録いただけます。</small></p>
                                         </div>
                                     </div>
       

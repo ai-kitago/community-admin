@@ -47,6 +47,9 @@
               <label>開催日</label>
               <input type="text" class="class-startdate form-control datepicker" placeholder="開催日" value="">
             </div>
+            <div style="display:none;">
+              <input type="text" class="class-enddate form-control datepicker" placeholder="開催日" value="">
+            </div>
             <div class="col-sm-4 col-xs-6 mb-pc-10">
               <label>開始時間</label>
               <input type="text" class="class-starttime form-control timepicker" placeholder="開始時間">

@@ -79,6 +79,24 @@
                                             </div>
                                         </div>
                                     </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <h4>企業紹介</h4>
+                                            <div class="form-horizontal form-label-left">
+                                                <div class="row">
+                                                  <div class="form-group">
+                                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">紹介文</label>
+                                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                                        <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="企業の紹介文をご記入ください。" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="プロフィールが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                                                    </div>
+                                                 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     
                                     <div class="row">
                                         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -98,9 +116,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">代表</label>
+                                                        <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">役員</label>
                                                         <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
-                                                            <input type="text" class="form-control" placeholder="山田 太郎">
+                                                            <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="代表取締役：山田 太郎
+取締役：山田 花子" data-parsley-trigger="keyup" data-parsley-maxlength="150" data-parsley-maxlength-message="長すぎます。（150文字）" data-parsley-validation-threshold="10"></textarea>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">

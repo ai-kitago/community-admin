@@ -18,7 +18,7 @@
                   </select>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 mb-xs-10">
-                  <select class="form-control" name="pref">
+                  <select class="form-control" name="status">
                   <?php
                     foreach ($dataClass->getStatus() as $key => $value) {
                       echo '<option value="'.$key.'">'.$value.'</option>';

@@ -18,7 +18,7 @@
                   </select>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 mb-xs-10">
-                  <select class="form-control" name="pref">
+                  <select class="form-control" name="status">
                   <?php
                     foreach ($dataClass->getStatus() as $key => $value) {
                       echo '<option value="'.$key.'">'.$value.'</option>';
@@ -81,6 +81,7 @@
     </div>
   </div>
 </div>
+
 <!-- mixitup -->
 <script src="/vendors/mixitup/mixitup.min.js"></script>
 <script src="/js/script-mixitup.js"></script>

@@ -62,12 +62,13 @@ $(function(){
       if($('.class-id').val() === 'new'){
         var uid = getUniqueId();
         var obj = new Object();
+        obj.teacher = new Array();
         obj.id = uid; obj.name = escapeHtml($('.class-name').val()); obj.startdate = escapeHtml($('.class-startdate').val());
         obj.enddate = escapeHtml($('.class-enddate').val()); obj.starttime = escapeHtml($('.class-starttime').val());
         obj.endtime = escapeHtml($('.class-endtime').val()); obj.content = escapeHtml($('.class-content').val());
         obj.note = escapeHtml($('.class-note').val()); obj.color = color; obj.url = url;
         var n = 0;
-        $('.data-id').each(function(){
+        $('#class-instructor-list .data-id').each(function(){
           obj.teacher[n] = $(this).val();
           n++;
         });

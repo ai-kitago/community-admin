@@ -44,7 +44,6 @@
                                     <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="スタジオ名">
                                     <span class="fa fa-home form-control-feedback left" aria-hidden="true"></span>
                                   </div>
-                                  
                                   <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
                                     <input type="text" class="form-control has-feedback-left" id="inputSuccess3" placeholder="WebSite or Blog">
                                     <span class="fa fa-globe form-control-feedback left" aria-hidden="true"></span>
@@ -112,10 +111,10 @@
                                   <div class="form-group">
                                     <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">基本料金</label>
                                     <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
-                                      <input type="text" class="form-control" placeholder="3800円 / 1Class">
+                                      <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="1Class / 3800円" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="プロフィールが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
                                     </div>
                                   </div>
-                                  <div class="form-group">
+                                  <div class="form-group card-box">
                                     <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">クレジットカード</label>
                                     <div class="cc-content col-lg-9 col-md-10 col-sm-10 col-xs-12">
                                       <div class="row">
@@ -238,7 +237,14 @@
                                   </div>
                                   
                                   <div class="form-group">
-                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">オプション</label>
+                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">定休日</label>
+                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                      <input type="text" class="form-control" placeholder="日曜日、祝日">
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="form-group option-box">
+                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">条件検索</label>
                                     <div class="cc-content col-lg-9 col-md-10 col-sm-10 col-xs-12">
                                       <div class="row">
                                         <div class="col col-md-6">
@@ -765,6 +771,14 @@
                             </div>
                             <?php include( WORKSPACE . '/include/modal-instructor.php'); ?>
                           </div>
+                          
+                          <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                              <h4>登録インストラクターがない場合</h4>
+                              <textarea id="studio-free" class="form-control resize-vertical mb-pc-20" name="studio-free" rows="10" placeholder="インストラクターの登録がない場合などにご記入ください" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="プロフィールが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                            </div>
+                          </div>
+                          
                         </div><!-- /x-content -->
                       </div>
                     </div>
@@ -882,7 +896,7 @@
                                 <ul class="list list-group">
                                   <li>
                                     <time class="event-date">2017年10月09日（月）</time>
-                                    <span class="event-name">dusk</span><span class="event-pref-name">東京都</span>
+                                    <span class="event-name">dusk</span><span class="event-pref-name">東���都</span>
                                     <select class="form-control case">
                                     <?php foreach($dataClass->getValues(3) as $key => $value) : ?>
                                       <option value="<?php echo $key; ?>"><?php echo $value; ?></option>

@@ -85,6 +85,9 @@
         
         <script src="/js/script-modal.js"></script>
         
+        <!-- ajax -->
+        <script src="/js/script-ajax.js"></script>
+        
         <!-- Custom Theme Scripts -->
         <script src="/build/js/custom.js"></script>
         <script src="/js/script.js"></script>

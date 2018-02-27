@@ -47,6 +47,18 @@
                                                         <span class="fa fa-globe form-control-feedback left" aria-hidden="true"></span>
                                                     </div>
                                                     <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                        <input type="text" class="form-control has-feedback-left" id="inputSuccess3" placeholder="Facebook URL">
+                                                        <span class="fa fa-facebook form-control-feedback left" aria-hidden="true"></span>
+                                                    </div>
+                                                    <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                        <input type="text" class="form-control has-feedback-left" id="inputSuccess3" placeholder="Twitter URL">
+                                                        <span class="fa fa-twitter form-control-feedback left" aria-hidden="true"></span>
+                                                    </div>
+                                                    <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                        <input type="text" class="form-control has-feedback-left" id="inputSuccess3" placeholder="Instagram URL">
+                                                        <span class="fa fa-instagram form-control-feedback left" aria-hidden="true"></span>
+                                                    </div>
+                                                    <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
                                                         <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="お問い合わせ先">
                                                         <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
                                                     </div>
@@ -74,12 +86,42 @@
                                             </div>
                                         </div>
                                     </div>
-                                        
+
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <h4>求人紹介</h4>
+                                            <div class="form-horizontal form-label-left">
+                                                <div class="row">
+                                                  <div class="form-group">
+                                                        <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">電話番号</label>
+                                                        <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                                          <input type="text" class="form-control" placeholder="03-1234-5678">
+                                                        </div>
+                                                  </div>
+
+                                                  <div class="form-group">
+                                                    <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">紹介文</label>
+                                                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                                        <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="求人の紹介文をご記入ください。" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="プロフィールが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                                                    </div>
+                                                 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                     <div class="row">
                                         <div class="col-md-12 col-sm-12 col-xs-12">
                                             <h4>応募内容</h4>
                                             <div class="form-horizontal form-label-left">
                                                 <div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">応募要項</label>
+                                                        <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                                            <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="求人の概要やメッセージを入力してください。" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="テキストが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                                                        </div>
+                                                    </div>
                                                     <div class="form-group">
                                                         <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">募集職種</label>
                                                         <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
@@ -157,6 +199,12 @@
                                                             <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="各種社会保険完備、交通費支給" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="テキストが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
                                                         </div>
                                                     </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-3 col-md-2 col-sm-2 col-xs-12">応募方法</label>
+                                                        <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                                                            <textarea id="message" required="required" class="form-control resize-vertical mb-pc-20" name="message" rows="10" placeholder="公式WEBサイトよりエントリーください。" data-parsley-trigger="keyup" data-parsley-maxlength="400" data-parsley-maxlength-message="テキストが長すぎます。（400文字）" data-parsley-validation-threshold="10"></textarea>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -164,6 +212,91 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <h2>選考プロセス <small>Process</small></h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li>
+                                            <a class="collapse-link">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 table-add-row process-add">
+                                            <table class="table table-striped table-bordered">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td-process">
+                                                            <div class="mb-pc-10">
+                                                                <input type="text" class="form-control" placeholder="エントリー">
+                                                            </div>
+                                                            <textarea class="form-control resize-vertical" placeholder="公式サイトよりエントリーフォームにて必要項目をご記入ください。"></textarea>
+                                                        </td>
+                                                        <td class="td-button">
+                                                            <button class="btn btn-default btn-circle btn-remove-row">－</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr-add-row">
+                                                        <td class="td-process">
+                                                            <div class="mb-pc-10">
+                                                                <input type="text" class="form-control" placeholder="書類選考">
+                                                            </div>
+                                                            <textarea class="form-control resize-vertical" placeholder="エントリーいただいた内容から選考させていただきます。"></textarea>
+                                                        </td>
+                                                        <td class="td-button">
+                                                            <button class="btn btn-default btn-circle btn-plug-row">＋</button>
+                                                            <button class="btn btn-default btn-circle btn-remove-row">－</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <script>
+                                                        <!--
+                                                          $(function(){
+                                                              var max = 5;
+                                                            var tr;
+                                                            var element = $('.process-add');
+                                                            element.find('.btn-add-row').on('click',function(){
+                                                              tr = element.find('.tr-add-row').clone(true);
+                                                              $(this).closest('.table-add-row').find('tbody .tr-add-row').before(tr);
+                                                              tr.fadeIn(500).removeClass('tr-add-row');
+                                                              _texrareaAutoHeight();
+                                                              _checkRowNumber(element,max);
+                                                              return false;
+                                                            });
+                                                            element.find('.btn-plug-row').on('click',function(){
+                                                              tr = element.find('.tr-add-row').clone(true);
+                                                              $(this).closest('tr').before(tr);
+                                                              tr.fadeIn(500).removeClass('tr-add-row');
+                                                              _texrareaAutoHeight();
+                                                              _checkRowNumber(element,max);
+                                                              return false;
+                                                            });
+                                                            element.find('.btn-remove-row').on('click',function(){
+                                                              tr = $(this).closest('tr');
+                                                              tr.fadeOut(500,function(){
+                                                                tr.remove();
+                                                                _checkRowNumber(element,max);
+                                                              });
+                                                              return false;
+                                                            });
+                                                          });
+                                                        -->
+                                                      </script>
+                                            <button class="btn btn-default btn-add-row">プロセスを追加</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /x-content -->
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

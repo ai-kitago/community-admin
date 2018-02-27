@@ -99,3 +99,10 @@ $md-checkmark-color: #fff;
     font-size: 12px;
   }
 }
+
+.card-box,
+.option-box {
+  .md-checkbox {
+    margin-bottom: 10px;
+  }
+}

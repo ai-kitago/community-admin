@@ -117,17 +117,17 @@ class createData {
     
     public function styleArray(){
         $array = array(
-            'hotyoga' => array('ホットヨガ','HOT YOGA'),
-            'iyengaryoga' => array('アイアンガーヨガ','IYENGAR YOGA'),
-            'ashtangayoga' => array('アシュタンガヨガ','ASHTANGA YOGA'),
-            'anusarayoga' => array('アヌサラヨガ','ANUSARA YOGA'),
-            'aromayoga' => array('アロマヨガ','AROMA YOGA'),
-            'ishtayoga' => array('イシュタヨガ','ISHTA YOGA'),
-            'sivanandayoga' => array('シヴァナンダヨガ','SIVANANDA YOGA'),
-            'hathayoga' => array('ハタヨガ','HATHA YOGA'),
-            'poweryoga' => array('パワーヨガ','POWER YOGA'),
-            'maternityyoga' => array('マタニティヨガ','MATERNITY YOGA'),
-            'kotsubankyouseiyoga' => array('骨盤矯正ヨガ','KOTSUBANKYOUSEI YOGA')
+            'hotyoga' => array('ホットヨガ'),
+            'iyengaryoga' => array('アイアンガーヨガ'),
+            'ashtangayoga' => array('アシュタンガヨガ'),
+            'anusarayoga' => array('アヌサラヨガ'),
+            'aromayoga' => array('アロマヨガ'),
+            'ishtayoga' => array('イシュタヨガ'),
+            'sivanandayoga' => array('シヴァナンダヨガ'),
+            'hathayoga' => array('ハタヨガ'),
+            'poweryoga' => array('パワーヨガ'),
+            'maternityyoga' => array('マタニティヨガ'),
+            'kotsubankyouseiyoga' => array('骨盤矯正ヨガ')
         );
         return $array;
     }

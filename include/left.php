@@ -24,7 +24,7 @@
             <li>
                 <a href="/">
                     <i class="fa fa-home"></i>
-                    <div class="menu_title">お知らせ<small>Information</small></div>
+                    <div class="menu_title">トップ<small>Top</small></div>
                     <span class="fa fa-chevron-right"></span>
                 </a>
             </li>
