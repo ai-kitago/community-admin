@@ -75,7 +75,7 @@ $(function(){
       parallelUploads: 1,
       uploadMultiple: false,
       maxFilesize: 1,
-      paramName: "file",
+      paramName: "attachment[file]",
       createImageThumbnails: true,
       maxThumbnailFilesize: 10,
       thumbnailWidth: 300,
@@ -91,7 +91,7 @@ $(function(){
       autoQueue: true,
       addRemoveLinks: true,
       previewsContainer: null,
-      hiddenInputContainer: "body",
+      hiddenInputContainer: "form",
       capture: null,
       renameFilename: null,
       dictDefaultMessage: "<span>【メイン画像】</span><br>クリック or ドロップ<br><small>推奨サイズ：1000x1000の正方形</small>",
@@ -104,11 +104,12 @@ $(function(){
       dictCancelUploadConfirmation: "Are you sure you want to cancel this upload?",
       dictRemoveFile: "",
       dictRemoveFileConfirmation: null,
-      dictMaxFilesExceeded: "You can not upload any more files."
+      dictMaxFilesExceeded: "You can not upload any more files.",
+      enqueueForUpload: true,
     };
-  
     var myDropzone = new Dropzone("div#myAvatar",{url:"./"});
     myDropzone.on("sending", function(file,xhr,formData) {
+      console.log(formData);
       formData.append("hoge", hogeParam);
     });
   }
@@ -142,7 +143,7 @@ $(function(){
       autoQueue: true,
       addRemoveLinks: true,
       previewsContainer: null,
-      hiddenInputContainer: "body",
+      hiddenInputContainer: "form",
       capture: null,
       renameFilename: null,
       dictDefaultMessage: "<span>【ロゴ画像】</span><br>クリック or ドロップ<br><small>推奨サイズ：1000x1000の正方形</small>",
@@ -188,7 +189,7 @@ $(function(){
       autoQueue: true,
       addRemoveLinks: true,
       previewsContainer: null,
-      hiddenInputContainer: "body",
+      hiddenInputContainer: "form",
       capture: null,
       renameFilename: null,
       dictDefaultMessage: "<span>【サブ画像】</span><br>クリック or ドロップ<br><small>推奨サイズ：1000x800の長方形</small><br><small>※複数枚可</small>",
@@ -474,3 +475,10 @@ function _texrareaAutoHeight(){
     });
   }
 }
+/*
+jQuery(function($){
+  $(window).load(function(){
+    $('.dz-hidden-input').attr('name','avatar');
+  });
+})
+*/

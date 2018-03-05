@@ -2,7 +2,33 @@
 <?php include ( WORKSPACE . '/include/header.php' ); ?>
 <?php include ( WORKSPACE . '/include/navigation.php' ); ?>
 <section class="mypage-section">
-    <form class="forms" data-parsley-validate novalidate>
+    
+    <?php
+        if($_POST) :
+            var_dump($_FILES);
+            /*
+            if (!isset($_FILES['image']['error']) || !is_int($_FILES['image']['error'])){
+                echo "ファイルアップロードエラー";
+            } else {
+                $file_name = $_FILES['image']['name'];
+                $extension = pathinfo($file_name, PATHINFO_EXTENSION); //拡張子取得
+                $tmp_path = $_FILES['image']['tmp_name'];
+                $file_dir_path = "upload/";
+                $uniq_name = date("YmdHis").md5(uniqid(microtime(),1)).session_id() . "." . $extension;
+
+                if (is_uploaded_file($tmp_path)) {
+                    if(move_uploaded_file( $tmp_path, $file_dir_path . $uniq_name)) {
+                        chmod($file_dir_path . $uniq_name, 0644);
+                    } else {
+                    echo "Error:アップロードできませんでした。";
+                    }
+                }
+            }
+            */
+        endif;
+    ?>
+    
+    <form id="mypage-form" class="forms" method="post" enctype="multipart/form-data" data-parsley-validate novalidate>
         <div class="page-title">
           <div class="title_left">
             <h1>インストラクター <small>instructor</small></h1>
@@ -26,6 +52,8 @@
       
                         <div class="x_content">
                             <div class="row">
+                                <?php include ( WORKSPACE . '/include/include-file.php' ); ?>
+                                <!--
                                 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 profile_left">
                                     <div class="profile_img">
                                         <div id="crop-avatar">
@@ -74,15 +102,23 @@
                                         </div>
                                     </div>
                                 </div>
-      
+                                -->
+                                <!--
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <h4>プロフィール画像</h4>
+                                    
+                                    <div id="drop_zone">ドロップ</div>
+                                    <div id="preview">
+                                        <input type="file" name="pose" accept=".jpg,.jpeg,.png" capture="camera" multiple>
+                                    </div>
+                                    
                                     <div class="pose_img">
                                         <div id="crop-pose">
                                             <div id="myPose" class="dropzone dz-clickable"></div>
                                         </div>
                                     </div>
                                 </div>
+                                -->
       
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <h4>プロフィール</h4>
