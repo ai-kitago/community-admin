@@ -47,6 +47,7 @@ jQuery(function($){
         var files = dropArea.find('.fileInput');
         var button = $(this).attr('data-value');
         var area = dropArea.children('.dropFile');
+        var name = files.attr('name');
         var filtered_files = [];
         for (var i = 0; i < files[0].files.length; i++) {
             if(files[0].files[i].name != button){
@@ -57,7 +58,7 @@ jQuery(function($){
         _preview(dropArea,filtered_files);
         var fileInput = dropArea.find('.fileInput');
         files[0].remove();
-        area.append('<input type="file" class="fileInput" name="files[]" accept=".jpg,.jpeg,.png" caption="camera">');
+        area.append('<input type="file" class="fileInput" name="' + name + '" accept=".jpg,.jpeg,.png" caption="camera">');
         return false;
     });
     
