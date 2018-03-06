@@ -52,7 +52,51 @@
       
                         <div class="x_content">
                             <div class="row">
-                                <?php include ( WORKSPACE . '/include/include-file.php' ); ?>
+                                
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-horizontal form-label-left input_mask">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="インストラクター名">
+                                                <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                                            </div>
+                                            
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="インストラクター名（英字表記）">
+                                                <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                                            </div>
+          
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess3" placeholder="ホームページ・サイトURL">
+                                                <span class="fa fa-globe form-control-feedback left" aria-hidden="true"></span>
+                                            </div>
+
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess3" placeholder="Facebook URL">
+                                                <span class="fa fa-facebook form-control-feedback left" aria-hidden="true"></span>
+                                            </div>
+          
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess3" placeholder="Twitter URL">
+                                                <span class="fa fa-twitter form-control-feedback left" aria-hidden="true"></span>
+                                            </div>
+          
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess3" placeholder="Instagram URL">
+                                                <span class="fa fa-instagram form-control-feedback left" aria-hidden="true"></span>
+                                            </div>
+
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="メールアドレス">
+                                                <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
+                                            </div>
+      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <?php include ( WORKSPACE . '/include/include-file.php' ); ?>
+                                </div>
                                 <!--
                                 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 profile_left">
                                     <div class="profile_img">
