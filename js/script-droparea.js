@@ -38,6 +38,7 @@ jQuery(function($){
         //console.log(e);
         var fileInput = $(this);
         var upload = e.target.files;
+        $(this).closest('.dropFile').children('.fileFlag').remove();
         _preview($(this).closest('.dropArea'),upload);
         fileInput[0].files = upload;
     });
@@ -59,6 +60,7 @@ jQuery(function($){
         var fileInput = dropArea.find('.fileInput');
         files[0].remove();
         area.append('<input type="file" class="fileInput" name="' + name + '" accept=".jpg,.jpeg,.png" caption="camera">');
+        area.append('<input type="hidden" class="fileFlag" name="'+name+'" value="delete">');
         return false;
     });
     
