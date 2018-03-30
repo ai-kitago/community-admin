@@ -442,24 +442,25 @@ function _addDropzone(id){
 }
 
 function _texrareaAutoHeight(){
+  var h = 94;
   var elements = document.getElementsByTagName('textarea');
   for(var i = 0; i < elements.length; i++){
     var ta = elements[i];
     //console.log(ta);
     ta.style.lineHeight = "20px";//init
     if(ta.value === ''){
-      ta.style.height = "92px";//init
+      ta.style.height = h + "px";//init
     }
     ta.addEventListener("input",function(evt){
       if(evt.target.scrollHeight > evt.target.offsetHeight){
-        if(evt.target.scrollHeight > 92){
+        if(evt.target.scrollHeight > h){
           evt.target.style.height = evt.target.scrollHeight + "px";
         }else{
-          evt.target.style.height = 92 + "px";
+          evt.target.style.height = h + "px";
         }
       }else{
         //console.log('2');
-        if(evt.target.scrollHeight > 92){
+        if(evt.target.scrollHeight > h){
           var height,lineHeight;
           while (true){
             height = Number(evt.target.style.height.split("px")[0]);
